@@ -1,18 +1,39 @@
 body {
-    background-color: rgba(23, 0, 66, 0.548);
+    background-color: midnightblue;
     color: white
 }
 
 .barra-navegacion {
     list-style: none;
-
 }
 
 .login-form {
-    text-align: center;
-    width: 60%;
     margin: auto;
-    margin-top: 220px;
+}
+
+.login-form .control-formulario {
+    width: 100%;
+}
+
+.ingreso-facebook, .ingreso-google {
+    border: 1px solid white;
+    width: 40%;
+    height: 35px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.ingreso-facebook {
+    background-color: blue;
+}
+
+.ingreso-google {
+    background-color: crimson;
 }
 
 .boton-formulario {
@@ -28,7 +49,14 @@ body {
 }
 
 .boton-formulario:hover {
-    background-color: #0022AA;
+    background-color: white;
+    color: #03264C;
+}
+
+.crear-formulario {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 .create-form {
@@ -40,9 +68,15 @@ body {
 .control-formulario {
     margin-bottom: 15px;
     border: none;
+    width: 31%;
 }
 
-.control-formulario .titulo-label {
+.control-formulario select {
+    width: 100%;
+    height: 60%;
+}
+
+.control-formulario .label-form {
     margin-bottom: 5px;
     font-style: normal;
     display: block;
@@ -68,5 +102,33 @@ body {
     text-align: left;
     width: 76%;
     margin-top: 16px;
+}
+
+.titulo-register {
+    padding-left: 15px;
+}
+
+.contenedor-form {
+    border: white 1px solid;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+@media (min-width: 320px) {
+    .control-formulario {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .control-formulario {
+        width: 45%;
+    }
+}
+@media (min-width: 1024px) {
+    .control-formulario {
+        width: 30%;
+    }
 }
 

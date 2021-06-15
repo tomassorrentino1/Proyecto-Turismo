@@ -4,7 +4,7 @@
   "description": "Descripcion del producto: Somos una agencia de viajes que vende paquetes de turismo para los imperdibles de Argentina. Tenemos paquetes que incluyen los destinos:\r Norte argentino, Cataratas, Buenos Aires, Mendoza, Bariloche y San Martín de los Andes, Península de Valdez, Calafate, Chalten y Ushuaia.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node"
   },
   "repository": {
     "type": "git",
