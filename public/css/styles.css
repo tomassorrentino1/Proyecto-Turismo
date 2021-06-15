@@ -1,6 +1,8 @@
 body {
     background-color: #050333;
-    color: white
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
 }
 
 .barra-navegacion {
@@ -86,8 +88,9 @@ a:hover {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 68%;
+    width: 93%;
     transition: all .5s;
+    margin-top: 20px;
 }
 
 .boton-formulario:hover {
@@ -114,8 +117,12 @@ a:hover {
 }
 
 .control-formulario select {
-    width: 100%;
+    width: 95%;
     height: 60%;
+}
+
+.nacionalidad {
+    margin-bottom: 15px;
 }
 
 .control-formulario .label-form {
@@ -126,7 +133,7 @@ a:hover {
 }
 
 .control {
-    width: 68%;
+    width: 90%;
     padding: 8px;
     border-radius: 5px;
     border: none;
