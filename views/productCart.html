@@ -14,21 +14,93 @@
     <!--Iconos-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/3b345a021c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/cart.css">
 </head>
 
 <body>
     
-    <header>
-
-        <nav>
-
-        </nav>
-
-
-    </header>
-
+   
     <main>
+
+        <div class="contenedor-chico pagina">
+            
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="info">
+                            <img class="imagen-paquete" src="/img/mendoza.jpg">
+                            <div>
+                                <p>Paquete Mendoza</p>
+                                <small>Precio: $50.000</small>
+                                <br>
+                                <a href="">Borrar</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$50.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="info">
+                            <img class="imagen-paquete" src="/img/cordoba.jpg">
+                            <div>
+                                <p>Paquete Córdoba</p>
+                                <small>Precio: $60.000</small>
+                                <br>
+                                <a href="">Borrar</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$60.000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="info">
+                            <img class="imagen-paquete" src="/img/salta.jpg">
+                            <div>
+                                <p>Paquete Salta</p>
+                                <small>Precio: $30.000</small>
+                                <br>
+                                <a href="">Borrar</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$30.000</td>
+                </tr>
+            </table>
+
+            <div class="precio-total">
+
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$140.000</td>
+                    </tr>
+                    <tr>
+                        <td>Impuestos</td>
+                        <td>$30.000</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$170.000</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="padre">
+            <button class="boton">Pagar</button>
+            </div>
+
+        </div>
+      
 
 
     </main>
