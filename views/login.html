@@ -28,7 +28,7 @@
 
     </header>
 
-    <div>
+    <div class="titulo-inicia-sesion">
         <h3>Iniciá Sesión</h3>
     </div>
 
@@ -36,37 +36,51 @@
 
         <form action="" method="POST" class="login-form">
 
-            <div>
-                <h3>Ingresá con tus cuentas</h3>
+            <div class="contenedor-datos">
+
+                <div class="titulos-login">
+                    <h3>Ingresá con tus cuentas</h3>
+                </div>
+
+                <div class="ingreso-facebook">
+                    <a href="http://facebook.com">Ingresá con Facebook</a>
+                </div>
+
+                <div class="ingreso-google">
+                    <a href="http://google.com">Ingresá con Google</a>
+                </div>
+
+                <div class="titulos-login">
+                    <h3>Ingresá con tu email</h3>
+                </div>
+
+                <fieldset class="control-formulario">
+                    <input type="text" name="email" id="email" class="control" placeholder="Ingresá tu email:"
+                        minlength="4" maxlength="25">
+                </fieldset>
+
+                <fieldset class="control-formulario">
+                    <input type="password" name=contraseña id="contraseña" class="control" minlength="4" maxlength="20"
+                        required placeholder="Ingresá tu contraseña:">
+                </fieldset>
+
+                <div class="texto-login">
+                    <p><a href="">Olvidaste tu contraseña?</p></a>
+                </div>
+
+                <fieldset class="control-formulario">
+                    <button type="submit" class="boton-formulario">Ingresá</button>
+                </fieldset>
+
+                <div class="texto-login">
+                    <a href="/register.html">Crear nuevo usuario</a>
+                </div>
+
             </div>
-            
-            <div class="ingreso-facebook">
-                <a href="">Ingresá con Facebook</a>
+
+            <div class="contenedor-imagen-login">
+                <img src="/img/cataratas_del_iguazu.jpg" class="imagen-login">
             </div>
-
-            <div class="ingreso-google">
-                <a href="">Ingresá con Google</a>
-            </div>
-
-            <fieldset class="control-formulario">
-                <input type="text" name="email" id="email" class="control" placeholder="Ingresá tu email:" minlength="4"
-                    maxlength="25">
-            </fieldset>
-
-            <fieldset class="control-formulario">
-                <input type="password" name=contraseña id="contraseña" class="control" minlength="4" maxlength="20"
-                    required placeholder="Ingresá tu contraseña:">
-            </fieldset>
-
-            <div>
-                <p><a href=""></a>Olvidaste tu contraseña?</p>
-            </div>
-
-            <fieldset class="control-formulario">
-                <button type="submit" class="boton-formulario">Ingresá</button>
-            </fieldset>
-
-            <a href="/register.html">Crear nuevo usuario</a>
 
         </form>
 

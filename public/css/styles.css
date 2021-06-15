@@ -1,5 +1,5 @@
 body {
-    background-color: midnightblue;
+    background-color: #050333;
     color: white
 }
 
@@ -7,17 +7,47 @@ body {
     list-style: none;
 }
 
-.login-form {
-    margin: auto;
+.titulo-inicia-sesion {
+    margin-left: 40px
 }
 
-.login-form .control-formulario {
+.login-form {
+    margin: auto;
+    display: block;
+}
+
+.contenedor-datos {
     width: 100%;
 }
 
+.contenedor-imagen-login {
+    width: 100%;
+}
+
+.imagen-login {
+    height: 100%;
+    width: 100%;
+}
+
+.titulos-login {
+    text-align: center;
+}
+
+.texto-login {
+    text-align: center;
+}
+
+.texto-login a {
+    color: white;
+}
+
+.login-form .control-formulario {
+    width: 94%;
+    text-align: center;
+}
+
 .ingreso-facebook, .ingreso-google {
-    border: 1px solid white;
-    width: 40%;
+    width: 68%;
     height: 35px;
     color: white;
     text-align: center;
@@ -25,15 +55,28 @@ body {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
 
+a:hover {
+    color: #fff;
 }
 
 .ingreso-facebook {
-    background-color: blue;
+    background-color: #03264C;
+}
+
+.ingreso-facebook a {
+    text-decoration: none;
+    color: white;
 }
 
 .ingreso-google {
     background-color: crimson;
+}
+
+.ingreso-google a {
+    text-decoration: none;
+    color: white;
 }
 
 .boton-formulario {
@@ -43,8 +86,7 @@ body {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 98%;
-    margin-bottom: 15px;
+    width: 68%;
     transition: all .5s;
 }
 
@@ -84,7 +126,7 @@ body {
 }
 
 .control {
-    width: 95%;
+    width: 68%;
     padding: 8px;
     border-radius: 5px;
     border: none;
@@ -119,16 +161,32 @@ body {
     .control-formulario {
         width: 100%;
     }
+    .imagen-login {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
     .control-formulario {
         width: 45%;
     }
+    .login-form {
+        display: flex;
+        margin: auto;
+    }
+    .contenedor-datos {
+        width: 50%;
+    }
+    .contenedor-imagen-login {
+        width: 50%;
+    }
+    .imagen-login {
+        display: block;
+    }
 }
+
 @media (min-width: 1024px) {
     .control-formulario {
         width: 30%;
     }
 }
-
