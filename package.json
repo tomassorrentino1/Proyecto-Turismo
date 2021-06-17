@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "grupo_2_exploraargentina",
+=======
   "name": "clear",
+>>>>>>> 2659f7c7e5b74b36211a1eff5f8ccd92b8fe7bcf
   "version": "1.0.0",
   "description": "Descripcion del producto: Somos una agencia de viajes que vende paquetes de turismo para los imperdibles de Argentina. Tenemos paquetes que incluyen los destinos:\r Norte argentino, Cataratas, Buenos Aires, Mendoza, Bariloche y San Martín de los Andes, Península de Valdez, Calafate, Chalten y Ushuaia.",
   "main": "app.js",
