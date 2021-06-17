@@ -8,7 +8,7 @@
     <title>Explora Argentina</title>
     <!--Tipografias GoogleFonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <!--Normalize para todas los navegadores-->
     <link rel="stylesheet" href="/css/normalize.css">
     <!--Iconos-->
@@ -19,12 +19,32 @@
 
 <body>
 
-    <header>
+    <header class="fixed-top">
+        <div class="header-principal">
+            <div class="header-alineado-flex">
+                <div class="contenedor-logo">
+                    <a href="/"><img src="/img/logo explora blanco fondo azul.jpeg" class="logo"></a>
+                </div>
+                <div class="barra-busqueda-menu">
+                    <div class="contenedor-barra-lupa">
+                        <input type="text" class="form-control" name="buscar" placeholder="Search">
+                        <div class="lupa">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <nav>
-
-        </nav>
-
+        <div class="contenedor-nav">
+            <nav role="navigation" class="barra-navegacion">
+                <ul class="lista-navegacion">
+                    <li class="titulos-nav"><a href="/index.html">Inicio</a></li>
+                    <li class="titulos-nav"><a href="/register.html">Registrarse</a></li>
+                    <li class="titulos-nav"><a href="/login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
@@ -32,7 +52,7 @@
         <h3>Iniciá Sesión</h3>
     </div>
 
-    <div class="contenedor-form">
+    <div class="contenedor-form-login">
 
         <form action="" method="POST" class="login-form">
 
@@ -87,8 +107,63 @@
     </div>
 
     <footer>
+        <div class="contenedor-footer">
+            <div class="fila">
+                <div class="columna-compañia">
+                    <h3>Compañia</h3>
+                    <ul class="lista-footer">
+                        <li>
+                            <a href="">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna-legal">
+                    <h3>Legal</h3>
+                    <ul class="lista-footer">
+                        <li>
+                            <a href="">Terminos y Condiciones</a>
+                        </li>
+                        <li>
+                            <a href="">Politica de privacidad</a>
+                        </li>
+                        <li>
+                            <a href="">Politica de cookies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="columna-redes">
+                <a href="" class="iconos-footer">
+                    <i class="icon-facebook-circle"></i>
+                </a>
+                <a href="" class="iconos-footer">
+                    <i class="icon-twitter-circle"></i>
+                </a>
+                <a href="" class="iconos-footer">
+                    <i class="icon-pinterest-circle"></i>
+                </a>
+                <a href="" class="iconos-footer">
+                    <i class="icon-linkedin-circle"></i>
+                </a>
+                <a href="" class="iconos-footer">
+                    <i class="icon-instagram-circle"></i>
+                </a>
+                <a href="" class="iconos-footer">
+                    <i class="icon-youtube-circle"></i>
+                </a>
+            </div>
+
+            <div class="columna-copyright">
+                <p>©2021-2030 ExploraArgentina, SA</p>
+            </div>
 
 
+        </div>
     </footer>
 
 
