@@ -1,8 +1,174 @@
+/*----Header----*/
+
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.header-principal {
+    width: 100%;
+    margin: auto;
+    height: 91px;
+    background-color: #0f2a5f;
+}
+
+.header-alineado-flex {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-logo {
+    height: 88px;
+    width: 75%;
+    text-align: left;
+}
+
+.barra-busqueda-menu {
+    width: 25%;
+}
+
+.contenedor-barra-lupa {
+    display: flex;
+    background-color: #333;
+    max-width: 250px;
+}
+
+.form-control {
+    background-color: #333;
+    border-color: #fff;
+    color: #ccc;
+    padding: 13px;
+}
+
+.lupa {
+    background-color: #333;
+    border-color: #fff;
+    color: #ccc;
+    font-size: 22px;
+    padding: 12px;
+}
+
+.logo {
+    width: 280px;
+    height: 90px;
+    padding-left: 65px;
+}
+
+.lista-navegacion {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.contenedor-nav {
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    padding: 7px;
+    display: none;
+}
+
+.titulos-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px){
+    .info p{
+        display: none;
+    }
+}
+
+/* Termina Header */
+
+/* Footer */
+
+footer {
+    background-color: #01011f;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contenedor-footer {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+footer .row {
+    text-align: left;
+}
+
+.fila {
+    display: flex;
+    margin-right: -20px;
+    margin-left: -20px;
+    height: 200px;
+    line-height: 36px;
+}
+
+.columna-legal{
+    position: relative;
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.columna-compañia{
+    position: relative;
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.lista-footer {
+    padding-left: 0;
+    list-style: none;
+}
+
+.columna-redes {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+.columna-copyright{
+    text-align: center;
+    width: 100%;
+}
+
+.iconos-footer {
+    display: inline-block;
+    font-size: 4rem;
+    margin-right: 3rem;
+}
+
+footer a, footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer /*/
+
+
+
 .titulo{
     color: #8899ac;
     font: 100px Verdana, Geneva, Tahoma, sans-serif;
     margin: 4px 0px 0px;
     background-color: #d8d8d8;
+    margin-top: 70px;
 }
 
 h4{
@@ -94,8 +260,7 @@ padding-right:20px;
 { 
     background-color: #d8d8d8;
 }
-p{ color: black;
-}
+
 .valija{
     color: black;
     font-size: 20px;

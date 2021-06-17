@@ -168,3 +168,79 @@ th:last-child{
         display: none;
     }
 }
+
+/* Termina Header */
+
+/* Footer */
+
+footer {
+    background-color: #01011f;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contenedor-footer {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+footer .row {
+    text-align: left;
+}
+
+.fila {
+    display: flex;
+    margin-right: -20px;
+    margin-left: -20px;
+    height: 200px;
+    line-height: 36px;
+}
+
+.columna-legal{
+    position: relative;
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.columna-compañia{
+    position: relative;
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.lista-footer {
+    padding-left: 0;
+    list-style: none;
+}
+
+.columna-redes {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+.columna-copyright{
+    text-align: center;
+    width: 100%;
+}
+
+.iconos-footer {
+    display: inline-block;
+    font-size: 4rem;
+    margin-right: 3rem;
+}
+
+footer a, footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer /*/
