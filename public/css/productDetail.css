@@ -67,10 +67,11 @@ padding-right:20px;
 
 .incluye{
     color:#03264C;
-    font: 40px Verdana, Geneva, Tahoma, sans-serif;
-    margin-right: 1050px;
-    margin-left: 500px;
-    border-style: double;   
+    font: 30px Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 500px;
+    margin-left: 400px;
+    border-style: double;
+    display: flex;   
 }
 .desayuno{
     color: #03264C;
