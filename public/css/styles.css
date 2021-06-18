@@ -281,6 +281,10 @@ a:hover {
     margin-top: 16px;
 }
 
+.boton-ingreso-redes {
+    padding: 6px
+}
+
 .sexo-usuario {
     display: flex;
     text-align: left;
