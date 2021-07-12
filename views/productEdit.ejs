@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Argentina</title>
+    <!--Tipografias GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--Normalize para todas los navegadores-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!--Iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3b345a021c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+	
+    <%- include('./partials/header')  %> 
+
+	<div class="titulo-register">
+        <h3>Mi cuenta</h3>
+    </div>
+
+    <div class="contenedor-form-register">
+
+        <form action="" method="POST" class="crear-formulario">
+
+            <fieldset class="control-formulario">
+                <label for="productoEditar" class="label-form">Producto:</label>
+                <select id="productos" name="productos">
+                <option value = "cafetera"> Paquete Mendoza </option>
+                <option value = "cafetera"> Paquete Cordoba </option>
+                <option value = "cafetera"> Paquete Salta </option>
+                <option value = "cafetera"> Paquete Jujuy </option>
+                </select>
+            </fieldset>
+
+            
+            <fieldset class="control-formulario">
+                <label for="precio" class="label-form">Precio del producto:</label>
+                <input type="numero" name="precio" id="precio" class="control" placeholder="Ej: $40.000">
+            </fieldset>
+
+            <fieldset class="control-formulario">
+                <label for="descuento" class="label-form">Descuento:</label>
+                <input type="numero" name="descuento" id="descuento" class="control" placeholder="Ej: 20%">
+            </fieldset>
+
+            
+
+            <fieldset class="control-formulario">
+                <label for="recibeNoticias" class="titulo-label">descripcion:</label>
+                <div class="noticias-usuario">
+                    <textarea rows="10" name="descripicon" id="descripcion" class="control">
+
+                    </textarea>
+                    
+                </div>
+            </fieldset>
+
+            <fieldset class="control-formulario">
+                <button type="submit" class="boton-formulario">Guardar Producto</button>
+                <button type="reset" class="boton-formulario">Borrar</button>
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+    <%- include('./partials/footer')  %> 
+</body>	
+</html>

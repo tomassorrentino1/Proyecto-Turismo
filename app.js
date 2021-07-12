@@ -8,6 +8,7 @@ const rutaUsuariosLogIn = require('./routers/userLogIn');
 const rutaUsuariosRegister = require('./routers/usersRegister');
 const rutaProductCart = require('./routers/productCart');
 const rutaProductDetail = require('./routers/productDetail');
+const rutaProductEdit = require('./routers/productEdit');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,5 +29,7 @@ app.use('/login', rutaUsuariosLogIn);
 app.use('/register', rutaUsuariosRegister);
 app.use('/productCart', rutaProductCart);
 app.use('/productDetail', rutaProductDetail);
+app.use('/productEdit', rutaProductEdit);
+
 
 

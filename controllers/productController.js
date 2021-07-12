@@ -5,8 +5,11 @@ let productController = {
     
     detail: function(req, res, next) {
         res.render('productDetail');
-      }
+      },
 
+    edit: function(req, res, next) {
+        res.render('productEdit');
+      },
 }
 
 module.exports = productController;
