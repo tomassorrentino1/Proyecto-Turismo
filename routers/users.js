@@ -5,8 +5,11 @@ let usersController = require('../controllers/usersController');
 
 // Register
 
-router.get('/', usersController.register);
+router.get('/register', usersController.register);
 
 
-  
+// Login
+
+router.get('/login', usersController.login);
+
 module.exports = router;

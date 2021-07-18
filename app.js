@@ -4,11 +4,10 @@ const path = require('path')
 const app = express();
 
 const rutaIndex = require('./routers/index');
-const rutaUsuariosLogIn = require('./routers/userLogIn');
-const rutaUsuariosRegister = require('./routers/usersRegister');
-const rutaProductCart = require('./routers/productCart');
-const rutaProductDetail = require('./routers/productDetail');
-const rutaProductEdit = require('./routers/productEdit');
+
+const rutaUsuarios = require('./routers/users');
+
+const rutaProductos = require('./routers/products');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,11 +24,8 @@ app.listen( 4000, () => {
 });
 
 app.use('/', rutaIndex);
-app.use('/login', rutaUsuariosLogIn);
-app.use('/register', rutaUsuariosRegister);
-app.use('/productCart', rutaProductCart);
-app.use('/productDetail', rutaProductDetail);
-app.use('/productEdit', rutaProductEdit);
+app.use('/user', rutaUsuarios);
+app.use('/products', rutaProductos);
 
 
 
