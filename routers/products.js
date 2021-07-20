@@ -16,9 +16,11 @@ router.get('/detail', productController.detail);
 
 router.get('/edit', productController.edit);
 
-// Listado de Productos (revisar por q no se muestra)
+// Listado de Productos 
 
 router.get('/', productController.index);
+
+router.get('/:id', productController.oneProduct);
 
 // Edit
 

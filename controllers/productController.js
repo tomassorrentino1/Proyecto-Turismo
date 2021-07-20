@@ -22,7 +22,13 @@ let productController = {
     },
 
     index: function(req, res, next){
-        res.render('products');
+        res.send(products);
+    },
+
+    oneProduct: function(req, res, next){
+      const id = req.params.id;
+      const product = products.find((prod) => prod.id == id);
+      res.send(product);
     },
 
     edit: function(req, res, next){
@@ -37,19 +43,27 @@ let productController = {
       return res.render('productEdit', viewData)
     },
 
-    update: (req, res) => {
-
-	
+    update: (req, res) =>{
+      
       // ENCONTRAR EL INDICE DEL PRODUCTO EN EL ARRAY
       // EN BASE A SU ID
       const indiceDelProducto = products.findIndex( producto => producto.id == req.params.id);
-  
+      
+      
+      
        //products[indice encontrado] == producto en el array
       products[indiceDelProducto] = { ...products[indiceDelProducto] , ...req.body };
-  
+     
+      
+      
+
+      //return res.send(req.params.body);
+      
+      
+
       // GUARDAR LA NUEVA BASE DE DATOS
       fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
-  
+      
   
       res.redirect(303, '/');
     }
