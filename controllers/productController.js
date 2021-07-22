@@ -28,7 +28,7 @@ let productController = {
       },
 
     create: function(req, res, next){
-      res.render('productCreate');
+        res.render('productCreate');
     },
 
     // Create -  Method to store

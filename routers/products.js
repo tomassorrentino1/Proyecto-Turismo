@@ -31,11 +31,7 @@ router.get('/:id/edit', productController.edit);
 router.put('/:id', productController.update);
 
 
-
-
-
-
-
+router.get('/create/', productController.create);
 
 
 module.exports = router;
