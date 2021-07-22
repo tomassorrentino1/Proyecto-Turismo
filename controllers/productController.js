@@ -21,6 +21,52 @@ let productController = {
       res.render('productCreate');
     },
 
+    // Create -  Method to store
+	store: (req, res) => {
+
+		// BUSCO EL ULTIMO PRODUCTO DEL ARRAY
+		// OBTENGO SU CAMPO ID 
+		// LE SUMO 1 
+
+		
+		// OBTENGO EL LARGO DEL ARRAY
+
+		// 16 
+		// products[15]
+
+		const lastProduct = products[products.length - 1]
+		
+		const productToCreate = req.body;
+    
+    console.log(productToCreate);
+		// productToCreate.id significa
+		// si existe la clave id en el objeto literal productToCreate
+		// se va a sobreeescribir caso contrario se va a crear una clave id
+
+	/*	const objeto = {
+			valor1: 1
+		}
+		objeto.valor1 = 2;
+		objeto.valor2 = 3;*/
+	//	(objeto.clave = valor ) == tanto si existe o no el valor de la clave será el especificado
+
+		productToCreate.id = lastProduct.id + 1;
+	//	productToCreate.name = 'Hola';
+
+
+		products.push(productToCreate);
+
+		//fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
+
+
+		
+
+		//productToCreate.id = ID DEL ULTIMO PRODUCTO + 1
+
+		
+		
+	},
+
     index: function(req, res, next){
         res.send(products);
     },

@@ -26,21 +26,16 @@
     
         <div class="contenedor-form-register">
     
-            <form action="" method="POST" class="crear-formulario">
+            <form action="/products" method="POST" class="crear-formulario">
     
                 <fieldset class="control-formulario">
-                    <label for="productoEditar" class="label-form">Producto:</label>
-                    <select id="productos" name="productos">
-                    <option value = "cafetera"> Paquete Mendoza </option>
-                    <option value = "cafetera"> Paquete Cordoba </option>
-                    <option value = "cafetera"> Paquete Salta </option>
-                    <option value = "cafetera"> Paquete Jujuy </option>
-                    </select>
+                    <label for="name" class="label-form">Nombre del producto:</label>
+                    <input type="text" id="name" name="nombre" placeholder="Ej: $40.000">
                 </fieldset>
     
                 
                 <fieldset class="control-formulario">
-                    <label for="precio" class="label-form">Precio del producto:</label>
+                    <label for="precio" class="label-form">Precio del PRUEBA:</label>
                     <input type="numero" name="precio" id="precio" class="control" placeholder="Ej: $40.000">
                 </fieldset>
     
