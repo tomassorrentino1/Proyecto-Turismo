@@ -35,61 +35,30 @@
                 </div>
             </div>
         </section>
+        
 
         <article class="contenedor-tres-productos">
-            <div class="producto">
-                <div class="foto-producto">
-                    <img src="/img/Tolkeyen-Slider-Glaciar.jpg" class="foto-producto-chica">
-                    <div class="descripcion-producto">
-                        <div>
-                            <p> producto1</p>
-                            <ul class="lista-productos">
-                                <li>Desayuno</li>
-                                <li>Traslado</li>
-                                <li>Comidas</li>
-                            </ul>
-                            <a href="" class="boton-ver-mas">Ver más</a>
+            <% products.forEach(element => { %>
+                
+                <div class="producto">
+                    <div class="foto-producto">
+                        <img src="<%= element.imagen%>" class="foto-producto-chica">
+                        <div class="descripcion-producto">
+                            <div>
+                                <p><%= element.nombre  %> </p>
+                                <ul class="lista-productos">
+                                    <li><%= element.precio  %>  </li>
+                                    
+                                </ul>
+                                <a href="/products/<%= element.id  %>/detail " class="boton-ver-mas">Ver más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="producto">
-                <div class="foto-producto">
-                    <img src="/img/Tolkeyen-Slider-Glaciar.jpg" class="foto-producto-chica">
-                    <div class="descripcion-producto">
-                        <div>
-                            <p>producto2</p>
-                            <ul class="lista-productos">
-                                <li>Desayuno</li>
-                                <li>Traslado</li>
-                                <li>Comidas</li>
-                            </ul>
-                            <a href="" class="boton-ver-mas">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="producto">
-                <div class="foto-producto">
-                    <img src="/img/Tolkeyen-Slider-Glaciar.jpg" class="foto-producto-chica">
-                    <div class="descripcion-producto">
-                        <div>
-                            <p>producto3</p>
-                            <ul class="lista-productos">
-                                <li>Desayuno</li>
-                                <li>Traslado</li>
-                                <li>Comidas</li>
-                            </ul>
-                            <a href="" class="boton-ver-mas">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </article>
-
+    
+                <% }) %>
+           
+           
 
     </main>
 

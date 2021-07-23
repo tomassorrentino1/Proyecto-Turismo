@@ -10,7 +10,17 @@ let productController = {
       },
     
     detail: function(req, res, next) {
-        res.render('productDetail');
+    
+      const id = req.params.id;
+      const product = products.find((prod) => prod.id == id);
+
+      if(!product){
+        return res.send("no hay producto")
+      }
+      const viewData = {
+        producto: product
+      }
+      return res.render('productDetail', viewData)
       },
 
     edit: function(req, res, next) {
@@ -75,7 +85,8 @@ let productController = {
 	},
 
     index: function(req, res, next){
-        res.render('products');
+
+        res.render('products', {products});
     },
 
     oneProduct: function(req, res, next){

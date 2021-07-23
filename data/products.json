@@ -2,10 +2,10 @@
   {
     "id": 1,
     "destino": "Mendoza",
-    "nombre": "Paquete Mendoza  ",
-    "descripcion": "                        Paquete San Rafael Mendoza. 7 dias de Hospedaje, Desayunos y transporte al aeropuerto incluidos\r\n                    ",
-    "precio": "50000",
-    "imagen": "product_1.jpg"
+    "nombre": "Paquete Mendoza   ",
+    "descripcion": "                                                Paquete San Rafael Mendoza. 7 dias de Hospedaje, Desayunos y transporte al aeropuerto incluidos\r\n                    \r\n                    \r\n                    ",
+    "precio": "$50.000",
+    "imagen": "/img/mendoza.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "nombre": "Paquete Córdoba",
     "descripcion": "Paquete Córdoba, 7 dias de Hospedaje, Desayunos Y Cenas Incluidos",
     "precio": 40000,
-    "imagen": "product_2.jpg"
+    "imagen": "/img/cordoba.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "nombre": "Paquete Salta",
     "descripcion": "Paquete Salta. 9 dias de hospedaje, desayunos y transporte al aeropuerto incluidos",
     "precio": 45000,
-    "imagen": "product_3.jpg"
+    "imagen": "/img/salta.jpg"
   },
   {
     "id": 4,
@@ -70,99 +70,5 @@
     "descripcion": "lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis",
     "precio": 49258,
     "imagen": "product_9.jpg"
-  },
-  {
-    "id": 10,
-    "destino": "Salvadora hexalepis",
-    "nombre": "Callipepla gambelii",
-    "descripcion": "luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
-    "precio": 40700,
-    "imagen": "product_10.jpg"
-  },
-  {
-    "id": 11,
-    "destino": "Spizaetus coronatus",
-    "nombre": "Pavo cristatus",
-    "descripcion": "diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin",
-    "precio": 54222,
-    "imagen": "product_11.jpg"
-  },
-  {
-    "id": 12,
-    "destino": "Antidorcas marsupialis",
-    "nombre": "Uraeginthus bengalus",
-    "descripcion": "tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum",
-    "precio": 30633,
-    "imagen": "product_12.jpg"
-  },
-  {
-    "id": 13,
-    "destino": "Kobus defassa",
-    "nombre": "Dasyprocta leporina",
-    "descripcion": "sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet",
-    "precio": 56615,
-    "imagen": "product_13.jpg"
-  },
-  {
-    "id": 14,
-    "destino": "Graspus graspus",
-    "nombre": "Mephitis mephitis",
-    "descripcion": "velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed",
-    "precio": 56427,
-    "imagen": "product_14.jpg"
-  },
-  {
-    "id": 15,
-    "destino": "Dipodomys deserti",
-    "nombre": "Corythornis cristata",
-    "descripcion": "nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec",
-    "precio": 62060,
-    "imagen": "product_15.jpg"
-  },
-  {
-    "id": 16,
-    "destino": "Dendrocitta vagabunda",
-    "nombre": "Phoenicopterus chilensis",
-    "descripcion": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna",
-    "precio": 86884,
-    "imagen": "product_16.jpg"
-  },
-  {
-    "id": 17,
-    "destino": "Chlidonias leucopterus",
-    "nombre": "Odocoileus hemionus",
-    "descripcion": "tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et",
-    "precio": 82619,
-    "imagen": "product_17.jpg"
-  },
-  {
-    "id": 18,
-    "destino": "Galictis vittata",
-    "nombre": "Papio cynocephalus",
-    "descripcion": "tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum",
-    "precio": 89691,
-    "imagen": "product_18.jpg"
-  },
-  {
-    "id": 19,
-    "destino": "Mirounga leonina",
-    "nombre": "Dasyurus viverrinus",
-    "descripcion": "integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo",
-    "precio": 81050,
-    "imagen": "product_19.jpg"
-  },
-  {
-    "id": 20,
-    "destino": "Mirounga leonina",
-    "nombre": "Balearica pavonina",
-    "descripcion": "et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien",
-    "precio": 28729,
-    "imagen": "product_20.jpg"
-  },
-  {
-    "nombre": "PRUEBA",
-    "precio": "PRUEBA",
-    "descripicon": "PRUEBA",
-    "id": 21
   }
 ]

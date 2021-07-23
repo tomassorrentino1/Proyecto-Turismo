@@ -10,7 +10,7 @@ router.get('/cart', productController.cart);
 
 // Product Detail
 
-router.get('/detail', productController.detail);
+router.get('/:id/detail', productController.detail);
 
 // Listado de Productos 
 
