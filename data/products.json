@@ -158,5 +158,11 @@
     "descripcion": "et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien",
     "precio": 28729,
     "imagen": "product_20.jpg"
+  },
+  {
+    "nombre": "PRUEBA",
+    "precio": "PRUEBA",
+    "descripicon": "PRUEBA",
+    "id": 21
   }
 ]

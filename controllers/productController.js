@@ -37,8 +37,15 @@ let productController = {
 		const lastProduct = products[products.length - 1]
 		
 		const productToCreate = req.body;
-    
-    console.log(productToCreate);
+  
+    productToCreate.id = lastProduct.id + 1;
+
+    products.push(productToCreate);
+
+    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+
+    res.send(products);
+    //console.log(productToCreate);
 		// productToCreate.id significa
 		// si existe la clave id en el objeto literal productToCreate
 		// se va a sobreeescribir caso contrario se va a crear una clave id
@@ -50,13 +57,13 @@ let productController = {
 		objeto.valor2 = 3;*/
 	//	(objeto.clave = valor ) == tanto si existe o no el valor de la clave será el especificado
 
-		productToCreate.id = lastProduct.id + 1;
+		
 	//	productToCreate.name = 'Hola';
 
 
-		products.push(productToCreate);
+	
 
-		//fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
+		
 
 
 		
@@ -68,7 +75,7 @@ let productController = {
 	},
 
     index: function(req, res, next){
-        res.send(products);
+        res.render('products');
     },
 
     oneProduct: function(req, res, next){
@@ -112,7 +119,36 @@ let productController = {
       
   
       res.redirect(303, '/');
-    }
+    },
+
+    // Delete - Delete one product from DB
+	destroy : (req, res) => {
+		// Do the magic
+
+		// Buscar el producto con el id recibido por parametros en el array
+		// Eliminarlo
+		// Guardar el archivo .json con el nuevo contenido de products
+
+		// Filter
+		
+
+		const nuevoArray = products.filter( (product) => product.id != req.params.id  );
+		// Todos los productos cuyo id sea diferente al enviado por parámetro
+
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(nuevoArray, null, 2));
+
+		
+		// session.mensaje = 'Producto creado';
+
+		// vista
+		// if(session.mensaje) 
+		// <p> <%= session.mensaje %> 
+		res.redirect(303, '/') // Notice the 303 parameter
+
+
+
+	},
 }
 
 module.exports = productController;
