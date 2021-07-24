@@ -1,5 +1,10 @@
 /*----Items del Cart----*/
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFECE6;
+    color: black;
+}
 
 .pagina{
     margin: 80px auto;

@@ -1,74 +1,74 @@
 [
   {
     "id": 1,
-    "destino": "Mendoza",
-    "nombre": "Paquete Mendoza   ",
-    "descripcion": "                                                Paquete San Rafael Mendoza. 7 dias de Hospedaje, Desayunos y transporte al aeropuerto incluidos\r\n                    \r\n                    \r\n                    ",
-    "precio": "$50.000",
+    "destino": "San Rafael",
+    "nombre": "Paquete Mendoza",
+    "descripcion": "¿Que incluye? 7 dias de Hospedaje, Desayunos y traslado al aeropuerto",
+    "precio": "$50000",
     "imagen": "/img/mendoza.jpg"
   },
   {
     "id": 2,
     "destino": "Córdoba",
     "nombre": "Paquete Córdoba",
-    "descripcion": "Paquete Córdoba, 7 dias de Hospedaje, Desayunos Y Cenas Incluidos",
-    "precio": 40000,
+    "descripcion": "¿Que incluye? 7 dias de Hospedaje, desayunos, cenas y traslado al aeropuerto",
+    "precio": "$40000",
     "imagen": "/img/cordoba.jpg"
   },
   {
     "id": 3,
     "destino": "Salta",
     "nombre": "Paquete Salta",
-    "descripcion": "Paquete Salta. 9 dias de hospedaje, desayunos y transporte al aeropuerto incluidos",
-    "precio": 45000,
+    "descripcion": "¿Que incluye? 9 dias de hospedaje, desayunos y traslado al aeropuerto",
+    "precio": "$45000",
     "imagen": "/img/salta.jpg"
   },
   {
     "id": 4,
-    "destino": "Jujuy",
-    "nombre": "Paquete Jujuy",
-    "descripcion": "Paquete Jujuy, 5 dias de hospedaje.",
-    "precio": 30000,
-    "imagen": "product_4.jpg"
+    "destino": "Iguazú",
+    "nombre": "Paquete Cataratas del Iguazú",
+    "descripcion": "¿Que incluye? 5 dias de hospedaje, desayunos, excursion a las cataratas y traslado al aeropuerto",
+    "precio": "$48000",
+    "imagen": "/img/iguazu.jpg"
   },
   {
     "id": 5,
-    "destino": "Dasyprocta leporina",
-    "nombre": "Ciconia ciconia",
-    "descripcion": "nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor",
-    "precio": 77336,
-    "imagen": "product_5.jpg"
+    "destino": "San Carlos de Bariloche",
+    "nombre": "Paquete Bariloche",
+    "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion a Villa la Angostura y traslado al aeropuerto",
+    "precio": "$77000",
+    "imagen": "/img/Bariloche.jpg"
   },
   {
     "id": 6,
-    "destino": "Macaca mulatta",
-    "nombre": "Bradypus tridactylus",
-    "descripcion": "erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor",
-    "precio": 16633,
-    "imagen": "product_6.jpg"
+    "destino": "Chubut",
+    "nombre": "Paquete Peninsula de Valdés",
+    "descripcion": "¿Que incluye? 6 dias de hospedaje, desayunos, excursion de avistaje de ballenas y traslado al aeropuerto",
+    "precio": "$52000",
+    "imagen": "/img/Peninsula Valdes.jpg"
   },
   {
     "id": 7,
-    "destino": "Mabuya spilogaster",
-    "nombre": "unavailable",
-    "descripcion": "dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis",
-    "precio": 95353,
-    "imagen": "product_7.jpg"
+    "destino": "Buenos Aires",
+    "nombre": "Paquete Buenos Aires",
+    "descripcion": "¿Que incluye? 7 dias de hospedaje, desayunos, city tour y traslado al aeropuerto",
+    "precio": "$50000",
+    "imagen": "/img/Buenos Aires.jpg"
   },
   {
     "id": 8,
-    "destino": "Pseudoleistes virescens",
-    "nombre": "Colobus guerza",
-    "descripcion": "magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti",
-    "precio": 3667,
-    "imagen": "product_8.jpg"
+    "destino": "Santa Cruz",
+    "nombre": "Paquete Calafate",
+    "descripcion": "¿Que incluye? 7 dias de hospedaje, desayunos, excursion al Glaciar y traslado al aeropuerto",
+    "precio": "$80000",
+    "imagen": "/img/Calafate.jpg"
   },
   {
     "id": 9,
-    "destino": "Kobus leche robertsi",
-    "nombre": "Oreamnos americanus",
-    "descripcion": "lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis",
-    "precio": 49258,
-    "imagen": "product_9.jpg"
+    "destino": "Tierra del Fuego",
+    "nombre": "Paquete Ushuaia",
+    "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion al Faro del Fin del Mundo y traslado al aeropuerto",
+    "precio": "$70000",
+    "imagen": "/img/Ushuaia.jpg"
   }
 ]
