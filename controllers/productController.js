@@ -146,6 +146,7 @@ let productController = {
 		const nuevoArray = products.filter( (product) => product.id != req.params.id  );
 		// Todos los productos cuyo id sea diferente al enviado por parámetro
 
+    
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(nuevoArray, null, 2));
 

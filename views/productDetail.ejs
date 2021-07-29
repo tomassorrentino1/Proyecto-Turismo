@@ -128,8 +128,8 @@
           <button class="boton-cambiar">Editar Producto</button>
         </form>
 
-        <form action="">
-          <button class="boton-cambiar">Eliminar Producto</button>
+        <form action="/products/<%= producto.id %>?_method=DELETE " method="POST">
+          <button type="submit"   class="boton-cambiar">Eliminar Producto</button>
         </form>
 
       </div>
