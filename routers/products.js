@@ -33,5 +33,7 @@ router.put('/:id', productController.update);
 
 router.get('/create/', productController.create);
 
+router.delete('/:id', productController.destroy); 
+
 
 module.exports = router;
