@@ -27,7 +27,7 @@
 
     <div class="contenedor-form-register">
 
-        <form action="" method="POST" class="crear-formulario">
+        <form action="/user/register" method="POST" class="crear-formulario">
 
             <fieldset class="control-formulario">
                 <label for="nombre" class="label-form">Nombre:</label>
@@ -341,15 +341,17 @@
 
             <fieldset class="control-formulario">
                 <label for="contraseña" class="label-form">Contraseña:</label>
-                <input type="password" name=contraseña id="contraseña" class="control" minlength="4" maxlength="14"
+                <input type="password" name="password" id="password" class="control" minlength="4" maxlength="14"
                     required>
             </fieldset>
 
-            <fieldset class="control-formulario">
+            <!--<fieldset class="control-formulario">
                 <label for="confirmarContraseña" class="label-form">Confirmar contraseña:</label>
                 <input type="password" name=confirmarContraseña id="confirmarContraseña" minlength="4" maxlength="14"
                     class="control" required>
-            </fieldset>
+            </fieldset> 
+
+            --->
 
             <fieldset class="control-formulario">
                 <label for="recibeNoticias" class="titulo-label">Quiero recibir noticias:</label>

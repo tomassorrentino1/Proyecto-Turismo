@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/tomassorrentino1/grupo_2_ExploraArgentina#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcrypt-salt": "^1.1.9",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "cookies": "^0.8.0",

@@ -70,5 +70,27 @@
     "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion al Faro del Fin del Mundo y traslado al aeropuerto",
     "precio": "$70000",
     "imagen": "/img/Ushuaia.jpg"
+  },
+  {
+    "nombre": "Prueba",
+    "apellido": "Prueba",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "",
+    "password": "$2b$10$Da54bZmy38k5OGXMXXw3ROK10LW3TZtRJbI1C1yLZk25MJwv01M5."
+  },
+  {
+    "nombre": "Prueba",
+    "apellido": "Prueba",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "",
+    "password": "$2b$10$UYjJkJC7L2cKuzfBtEmL9.bWQ7LkJJwcvL2MNtcn8XbLUPXqjeaEq"
   }
 ]
