@@ -12,6 +12,7 @@ const rutaProductos = require('./routers/products');
 const methodOverride =  require('method-override');
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');
+const expressSession = require('express-session');
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -19,6 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+app.use(expressSession({secret: 'secreta'}))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
