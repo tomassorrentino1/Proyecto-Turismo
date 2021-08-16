@@ -182,6 +182,29 @@
     "email": "tomas.sorrentino@gmail.com",
     "password": "$2b$10$M2OqysYV01sXLPJcmCPdoekhUB.tcO2NaUWyiG21pdMVVufRU5oI2",
     "id": 22
+  },
+  {
+    "nombre": "Tomas prueba",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "",
+    "password": "$2b$10$atEdZ3fbU9DYNDi0pb/VeuBwM/kbB.PMoe6GdPNTgCVjoC9HfheE.",
+    "id": 23
+  },
+  {
+    "nombre": "toms",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "tomas_sorrentino@gmail.com",
+    "password": "$2b$10$mh8Xyth.taE9nI8cz0017epSZHND.EAXB5/toTvwdm8wbK6sIfqN2",
+    "id": 24
   }
-  
 ]

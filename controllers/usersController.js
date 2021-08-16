@@ -24,7 +24,7 @@ let usersController = {
 
       const userToLogin = users.find((user) => user.email == req.body.email);
       if(!userToLogin){
-        return res.send('error');
+        return res.send('este usuario no existe');
       }
 
       // Comparar la contraseña del usuario de la base con la enviada en la petición
@@ -33,10 +33,12 @@ let usersController = {
 
       if(comparacion){
         req.session.user = userToLogin;
-
+        return res.redirect('/', 301)
       }
 
-      return res.redirect('/', 301)
+      else res.send('contraseña incorrecta')
+
+      
 
     },
 
