@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const authMiddleware = require('../middlewares/authMiddleware');
 
 const productController = require('../controllers/productController');
 
@@ -18,7 +19,7 @@ router.get('/', productController.index);
 
 // Crear producto
 
-router.get('/create', productController.create);
+router.get('/create', authMiddleware, productController.create);
 router.post('/', productController.store); 
 
 // Un solo producto
@@ -27,13 +28,13 @@ router.get('/:id', productController.oneProduct);
 
 // Edit
 
-router.get('/:id/edit', productController.edit); 
+router.get('/:id/edit', authMiddleware, productController.edit); 
 router.put('/:id', productController.update);
 
 
 router.get('/create/', productController.create);
 
-router.delete('/:id', productController.destroy); 
+router.delete('/:id', authMiddleware, productController.destroy); 
 
 
 module.exports = router;

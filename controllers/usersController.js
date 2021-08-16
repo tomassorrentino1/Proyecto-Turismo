@@ -8,6 +8,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
 const { validationResult } = require('express-validator');
+const { profile } = require('console');
 
 
 
@@ -33,7 +34,9 @@ let usersController = {
 
       if(comparacion){
         req.session.user = userToLogin;
-        return res.redirect('/', 301)
+        req.session.userLogged = userToLogin;
+        res.render('profile');
+        //return res.redirect('/', 301)
       }
 
       else res.send('contraseña incorrecta')
@@ -71,7 +74,13 @@ let usersController = {
 
       res.redirect(303, '/')
 
+    },
+
+    profile: function(req, res, next) {
+      res.render('profile');
+      console.log(req.session);
     }
+
 
 }
 

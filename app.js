@@ -20,7 +20,15 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.use(expressSession({secret: 'secreta'}))
+app.use(expressSession({
+    secret: 'secreta',
+
+    resave: false,
+
+    saveUninitialized: false,
+
+
+}))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
