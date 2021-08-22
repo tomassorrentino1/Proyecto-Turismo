@@ -35,13 +35,10 @@ let productController = {
     // Create -  Method to store
 	store: (req, res) => {
 
-		// BUSCO EL ULTIMO PRODUCTO DEL ARRAY
-		// OBTENGO SU CAMPO ID 
-		// LE SUMO 1 
-
-		
+		// BUSCO EL ULTIMO PRODUCTO DEL ARRAY, 
+		// REQUIERO EL BODY DEL PRODUCTO Y OBTENGO SU CAMPO ID 
+		// AL CAMPO ID LE SUMO 1 
 		// OBTENGO EL LARGO DEL ARRAY
-
 		// 16 
 		// products[15]
 
@@ -68,21 +65,11 @@ let productController = {
 		objeto.valor2 = 3;*/
 	//	(objeto.clave = valor ) == tanto si existe o no el valor de la clave será el especificado
 
-		
-	//	productToCreate.name = 'Hola';
-
-
 	
-
-		
-
-
-		
+	//	productToCreate.name = 'Hola';
 
 		//productToCreate.id = ID DEL ULTIMO PRODUCTO + 1
 
-		
-		
 	},
 
     index: function(req, res, next){

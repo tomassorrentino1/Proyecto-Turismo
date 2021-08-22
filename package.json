@@ -4,7 +4,9 @@
   "description": "Descripcion del producto: Somos una agencia de viajes que vende paquetes de turismo para los imperdibles de Argentina. Tenemos paquetes que incluyen los destinos:\r Norte argentino, Cataratas, Buenos Aires, Mendoza, Bariloche y San Martín de los Andes, Península de Valdez, Calafate, Chalten y Ushuaia.",
   "main": "app.js",
   "scripts": {
-    "test": "node"
+    "test": "node",
+    "git": "git add . && git commit -m ",
+    "postgit": "git push --all"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,8 @@
     "express-validator": "^6.12.1",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {}
 }
