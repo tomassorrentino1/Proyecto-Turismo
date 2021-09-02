@@ -4,7 +4,7 @@
     "destino": "San Rafael",
     "nombre": "Paquete Mendoza",
     "descripcion": "¿Que incluye? 7 dias de Hospedaje, Desayunos y traslado al aeropuerto",
-    "precio": "$50000",
+    "precio": "$50.000",
     "imagen": "/img/mendoza.jpg"
   },
   {
@@ -12,7 +12,7 @@
     "destino": "Córdoba",
     "nombre": "Paquete Córdoba",
     "descripcion": "¿Que incluye? 7 dias de Hospedaje, desayunos, cenas y traslado al aeropuerto",
-    "precio": "$40000",
+    "precio": "$40.000",
     "imagen": "/img/cordoba.jpg"
   },
   {
@@ -20,7 +20,7 @@
     "destino": "Salta",
     "nombre": "Paquete Salta",
     "descripcion": "¿Que incluye? 9 dias de hospedaje, desayunos y traslado al aeropuerto",
-    "precio": "$45000",
+    "precio": "$45.000",
     "imagen": "/img/salta.jpg"
   },
   {
@@ -28,7 +28,7 @@
     "destino": "Iguazú",
     "nombre": "Paquete Cataratas del Iguazú",
     "descripcion": "¿Que incluye? 5 dias de hospedaje, desayunos, excursion a las cataratas y traslado al aeropuerto",
-    "precio": "$48000",
+    "precio": "$48.000",
     "imagen": "/img/iguazu.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "destino": "San Carlos de Bariloche",
     "nombre": "Paquete Bariloche",
     "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion a Villa la Angostura y traslado al aeropuerto",
-    "precio": "$77000",
+    "precio": "$77.000",
     "imagen": "/img/Bariloche.jpg"
   },
   {
@@ -44,7 +44,7 @@
     "destino": "Chubut",
     "nombre": "Paquete Peninsula de Valdés",
     "descripcion": "¿Que incluye? 6 dias de hospedaje, desayunos, excursion de avistaje de ballenas y traslado al aeropuerto",
-    "precio": "$52000",
+    "precio": "$52.000",
     "imagen": "/img/Peninsula Valdes.jpg"
   },
   {
@@ -52,7 +52,7 @@
     "destino": "Buenos Aires",
     "nombre": "Paquete Buenos Aires",
     "descripcion": "¿Que incluye? 7 dias de hospedaje, desayunos, city tour y traslado al aeropuerto",
-    "precio": "$50000",
+    "precio": "$50.000",
     "imagen": "/img/Buenos Aires.jpg"
   },
   {
@@ -60,7 +60,7 @@
     "destino": "Santa Cruz",
     "nombre": "Paquete Calafate",
     "descripcion": "¿Que incluye? 7 dias de hospedaje, desayunos, excursion al Glaciar y traslado al aeropuerto",
-    "precio": "$80000",
+    "precio": "$80.000",
     "imagen": "/img/Calafate.jpg"
   },
   {
@@ -68,7 +68,7 @@
     "destino": "Tierra del Fuego",
     "nombre": "Paquete Ushuaia",
     "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion al Faro del Fin del Mundo y traslado al aeropuerto",
-    "precio": "$70000",
+    "precio": "$70.000",
     "imagen": "/img/Ushuaia.jpg"
   }
 ]
