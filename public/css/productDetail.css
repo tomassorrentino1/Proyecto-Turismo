@@ -68,12 +68,11 @@
     display: flex;
   }
 
-.contenedor-nav {
+  .contenedor-nav {
     background-color: white;
     width: 100%;
     height: 70px;
     padding: 7px;
-    display: none;
 }
 
 .titulos-nav a {
