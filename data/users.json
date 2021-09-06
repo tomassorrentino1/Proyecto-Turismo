@@ -206,5 +206,17 @@
     "email": "tomas_sorrentino@gmail.com",
     "password": "$2b$10$mh8Xyth.taE9nI8cz0017epSZHND.EAXB5/toTvwdm8wbK6sIfqN2",
     "id": 24
+  },
+  {
+    "nombre": "Toms Sorrentino",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "toms@gmail.com",
+    "password": "$2b$10$3CPktoy1halRvOl2wPo2TeNNgjgaToZ2kGkBioF8d4s2HmvIr0sWC",
+    "id": 25
   }
 ]
