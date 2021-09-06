@@ -64,6 +64,10 @@
     width: 30%;
 }
 
+.bienvenido {
+    display: flex;
+}
+
 .contenedor-nav {
     background-color: white;
     width: 100%;
