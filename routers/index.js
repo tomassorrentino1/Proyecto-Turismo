@@ -6,4 +6,11 @@ let indexController = require('../controllers/indexController');
 
 router.get('/', indexController.home );
 
+// nosotros
+
+router.get('/aboutUs', indexController.aboutUs );
+
+// terminos y condiciones
+
+router.get ('/termCond', indexController.termCond)
 module.exports = router;

@@ -402,6 +402,46 @@ footer a, footer a:hover {
     text-decoration: none;
 }
 
+.glaciar {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+/*----aboutUs----*/
+
+.contenedorAboutUs {
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    
+}
+
+.contenedorContact {
+    display: flex;
+    flex-direction: column ;
+}
+
+.aboutUs .contact {
+    text-align: center;
+
+}
+
+.descaboutUs {
+    text-align: center;
+    text-justify: auto;
+    width: 800;
+
+
+}
+
+.listaContactos {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    width: fit-content;
+    color: #01011f;
+}
+
+
 @media (min-width: 320px) {
     .control-formulario {
         width: 100%;
