@@ -8,19 +8,19 @@ module.exports = function (sequelize, dataTypes) {
             autoIncrement: true
         },
         name: {
-            type: dataTypes.VARCHAR(50)
+            type: dataTypes.STRING
         },
         destination_id: {
             type: dataTypes.INTEGER
         },
         description: {
-            type: dataTypes.VARCHAR(200)
+            type: dataTypes.STRING
         },
         price: {
             type: dataTypes.DECIMAL(10,2)
         },
         image: {
-            type: dataTypes.VARCHAR(70)
+            type: dataTypes.STRING
         },
         category_id: {
             type: dataTypes.INTEGER
@@ -40,9 +40,9 @@ module.exports = function (sequelize, dataTypes) {
             as: 'categories',
             foreignKey: 'idCategory'
         }),
-        Product.belongsTo (models.product, {
+        Product.belongsTo (models.Product, {
             as: 'destination',
-            foreignKey: 'idDestination'
+            foreignKey: 'destination_id'
         })
 
     }

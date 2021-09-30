@@ -1,137 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <%- include('./partials/head')  %> 
-
-  <link rel="stylesheet" href="/css/productDetail.css">
+  <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/css/productDetail.css">
 </head>
-
-
 <body>
-
   <%- include('./partials/header') %>
- 
-
     <main>
-
       <div class="titulo">
         <h4>
           <%= producto.nombre %>
         </h4>
       </div>
-
       <div class="contenedor-imagen-descripcion">
-
         <div class="contenedor-imagen">
-
           <div class="img">
             <img style="width: 431px; height: 316px; display: block;" src="<%= producto.imagen%>" alt="Media image">
           </div>
-
           <div>
-            
             <form action="/products/cart" method="GET">
-            <button class="comprar">Comprar</button>
+              <button class="comprar">Comprar</button>
             </form>
-            
           </div>
-
         </div>
-
         <div class="contenedor-descripcion-paquete">
-
           <div class="incluye"> Información del Paquete </div>
-
           <div>
-
             <ul>
               <div class="descripcion-detalle">
                 <li class="titulo-detalles"><span class="avion"><i class="fas fa-plane"></i></span>Vuelo Operado
                   por
                   Aerolíneas Argentinas</li>
-                <P>IDA vie. 25 de jun. a las 20.20 de AEP | Directo<span class="valija"><i
+                <P>IDA vie. 25 de jun. a las 20.20 de | Directo<span class="valija"><i
                       class="fas fa-suitcase-rolling"></i></span></P>
-
-                <P>VUELTA mar. 27 de jul. a las 13.30 de CORD | Directo <span class="valija"><i
+                <P>VUELTA mar. 27 de jul. a las 13.30 | Directo <span class="valija"><i
                       class="fas fa-suitcase-rolling"></i></span></P>
-
-                <button class="boton-cambiar">Cambiar vuelo</button>
+                <div>
+                  <h5>¿Querés cambiar el vuelo?</h5>
+                  <input type="date" name="fecha">
+                </div>
             </ul>
-
           </div>
-
           <div class="descripcion-detalle">
-
             <ul>
               <li class="titulo-detalles"><span class="icono-cama"><i class="fas fa-bed"></i></span>Descripción
               </li>
               <p>
                 <%= producto.descripcion %>
               </p>
-
-              <button class="boton-cambiar">Cambiar alojamiento</button>
+              
             </ul>
-
           </div>
-
           <div class="descripcion-detalle">
-
             <ul>
               <li class="titulo-detalles">
                 <span class="icono-mapa">
                   <i class="fas fa-map"></i>
                 </span>Precio
               </li>
-
               <P>
                 <%= producto.precio %>
               </p>
-
             </ul>
-
           </div>
-
           <div class="descripcion-detalle">
-
             <ul>
-
               <li class="titulo-detalles"> <span class="icono-traslado">
                   <i class="fas fa-clock"></i></span>
                 Destino
               </li>
-
               <p>
                 <%= producto.destino %>
               </p>
-
             </ul>
-
           </div>
-
         </div>
-
       </div>
-
       <div>
-
         <form action="/products/<%= producto.id  %>/edit " method="GET">
           <button class="boton-cambiar">Editar Producto</button>
         </form>
-
         <form action="/products/<%= producto.id %>?_method=DELETE " method="POST">
-          <button type="submit"   class="boton-cambiar">Eliminar Producto</button>
+          <button type="submit" class="boton-cambiar">Eliminar Producto</button>
         </form>
-
       </div>
-
-
-
     </main>
-
-
     <%- include('./partials/footer') %>
-
 </body>
-
 </html>

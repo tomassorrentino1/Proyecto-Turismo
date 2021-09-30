@@ -4,12 +4,24 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+const db = require('../database/models');
+const sequelize = db.sequelize;
+
+const Product = db.Product;
 
 let productController = {
     cart: function(req, res, next) {
         res.render('productCart');
       },
-    
+
+
+      'list':  async (req, res) => {
+        db.Product.findAll()
+            .then(producto => {
+                res.render('products', { producto })
+            })
+          },
+
     detail: function(req, res, next) {
     
       const id = req.params.id;

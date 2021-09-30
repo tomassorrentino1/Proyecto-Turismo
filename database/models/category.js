@@ -8,7 +8,7 @@ module.exports = function (sequelize, dataTypes) {
             autoIncrement: true
         },
         type: {
-            type: dataTypes.VARCHAR(15)
+            type: dataTypes.STRING
         }        
     }
 
@@ -21,11 +21,11 @@ module.exports = function (sequelize, dataTypes) {
     let Category = sequelize.define(alias, cols, config);
 
     Category.associate=function(models) {
-        Category.belongsTo (models.product, {
+        Category.belongsTo (models.Product, {
             as: 'products',
             foreignKey: 'idCategory'
         })
     }
 
-    return category;
+    return Category;
 }

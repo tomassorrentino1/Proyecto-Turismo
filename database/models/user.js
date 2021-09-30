@@ -8,19 +8,19 @@ module.exports = function (sequelize, dataTypes) {
             autoIncrement: true
         },
         first_name: {
-            type: dataTypes.VARCHAR(15)
+            type: dataTypes.STRING
         },
         last_name: {
-            type: dataTypes.VARCHAR(15)
+            type: dataTypes.STRING
         },
         email: {
-            type: dataTypes.VARCHAR(30)
+            type: dataTypes.STRING
         },
         password: {
-            type: dataTypes.VARCHAR(20)
+            type: dataTypes.STRING
         },
         image: {
-            type: dataTypes.VARCHAR(70)
+            type: dataTypes.STRING
         }  
     }
 

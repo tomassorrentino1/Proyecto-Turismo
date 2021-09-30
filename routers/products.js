@@ -15,7 +15,7 @@ router.get('/:id/detail', productController.detail);
 
 // Listado de Productos 
 
-router.get('/', productController.index);
+router.get('/', productController.list);
 
 // Crear producto
 

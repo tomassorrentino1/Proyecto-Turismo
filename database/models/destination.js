@@ -2,13 +2,13 @@ module.exports = function (sequelize, dataTypes) {
 
     let alias = "destination";
     let cols = {
-        idDestination: {
+        destination_id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         place: {
-            type: dataTypes.VARCHAR(15)
+            type: dataTypes.STRING
         }        
     }
 
@@ -21,11 +21,11 @@ module.exports = function (sequelize, dataTypes) {
     let Destination = sequelize.define(alias, cols, config);
 
     Destination.associate=function(models) {
-        Destination.belongsTo (models.product, {
+        Destination.belongsTo (models.Product, {
             as: 'products',
-            foreignKey: 'idDestination'
+            foreignKey: 'destination_id'
         })
     }
 
-    return destination;
+    return Destination;
 }
