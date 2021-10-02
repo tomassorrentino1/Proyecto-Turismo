@@ -13,15 +13,15 @@
     <figure>
         <img src="/img/logo-DH.png" alt="Logo Digital House">
     </figure>
-    <h1>LISTADO DE PELÍCULAS</h1>
+    <h1>LISTADO DE PRODUCTOS</h1>
     <br>
-    <a  href="/movies/add">Agregar Película</a></p>
+    <a  href="/products/create">Agregar Producto</a></p>
     <br>
     <br>
     <ul>
         <% for( let i = 0; i < producto.length; i++ ) { %>
         <li>
-            <a href="/movies/detail/<%= producto[i].id %>"><%= producto[i].name %></a>
+            <a href="/products/<%= producto[i].idProduct %>/detail "><%= producto[i].name %></a>
         </li>
         <% } %>
 

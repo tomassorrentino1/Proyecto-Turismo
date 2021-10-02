@@ -38,5 +38,17 @@
     "email": "luciareami@columbia.edu",
     "password": "luciareami",
     "image": "user_5.jpg"
+  },
+  {
+    "nombre": "Tomas",
+    "apellido": "Sorren",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "sorren@gmail.com",
+    "password": "$2b$10$7Wlp8cv80FFFB5104QwOluMO.bpUhxWxSweHp/GTAcMbZ2JBlgVJ6",
+    "id": 6
   }
 ]

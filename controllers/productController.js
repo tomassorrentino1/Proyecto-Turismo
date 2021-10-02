@@ -22,23 +22,32 @@ let productController = {
             })
           },
 
-    detail: function(req, res, next) {
+    'detail': function(req, res, next) {
     
-      const id = req.params.id;
-      const product = products.find((prod) => prod.id == id);
+      //const id = req.params.id;
+      //const product = products.find((prod) => prod.id == id);
 
-      if(!product){
-        return res.send("no hay producto")
-      }
-      const viewData = {
-        producto: product
-      }
-      return res.render('productDetail', viewData)
+      db.Product.findByPk(req.params.id)
+
+      .then(producto => {
+        res.render ('productDetail', {producto})
+      })
+      
+
+      //if(!producto){
+        //return res.send("no hay producto")
+      //}
+      //const viewData = {
+        //producto: producto
+      //}
+      //return res.render('productDetail', viewData)
       },
 
-    edit: function(req, res, next) {
-        res.render('productEdit');
-      },
+    //edit: async function(req, res) {
+
+      //  const productToEdit = await Product.findByPk(req.params.id);
+        //return res.render('productEdit', {Product: productToEdit});
+     // },
 
     create: function(req, res, next){
         res.render('productCreate');
@@ -84,10 +93,17 @@ let productController = {
 
 	},
 
-    index: function(req, res, next){
+    //index: function(req, res, next){
 
-        res.render('products', {products});
-    },
+    //   res.render('products', {products});
+    //},
+
+    //'index': async (req, res) => {
+      //  db.Product.findAll()
+        //  .then(producto => {
+          //    res.render('index', { producto })
+          //})
+        //},
 
     oneProduct: function(req, res, next){
       const id = req.params.id;
@@ -95,16 +111,22 @@ let productController = {
       res.send(product);
     },
 
-    edit: function(req, res, next){
-      const id = req.params.id;
-      const product = products.find((prod) => prod.id == id);
-      if(!product){
-        return res.send("no hay producto")
-      }
-      const viewData = {
-        producto: product
-      }
-      return res.render('productEdit', viewData)
+    //edit: function(req, res, next){
+      //const id = req.params.id;
+      //const product = products.find((prod) => prod.id == id);
+      //if(!product){
+      //  return res.send("no hay producto")
+      //}
+      //const viewData = {
+        //producto: product
+      //}
+      //return res.render('productEdit', viewData)
+
+      edit: async function(req, res) {
+
+        const productToEdit = await Product.findByPk(req.params.id);
+        return res.render('productEdit', {Product: productToEdit});
+      
     },
 
     update: (req, res) =>{

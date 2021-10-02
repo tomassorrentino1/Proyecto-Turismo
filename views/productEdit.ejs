@@ -17,17 +17,17 @@
 
     <div class="contenedor-form-register">
 
-        <form action="/products/<%= producto.id %>?_method=PUT" method="POST" class="crear-formulario">
+        <form action="/products/<%= Product.idProduct %>?_method=PUT" method="POST" class="crear-formulario">
 
             <fieldset class="control-formulario">
                 <label for="name" class="label-form">Nombre del producto:</label>
-                <input type="text" value="<%= producto.nombre %> " id="name" name="nombre" placeholder="Ej: $40.000">
+                <input type="text" value="<%= Product.name %> " id="name" name="nombre" placeholder="Ej: $40.000">
             </fieldset>
 
             
             <fieldset class="control-formulario">
                 <label for="precio" class="label-form">Precio del producto:</label>
-                <input type="numero" value= "<%= producto.precio %>" name="precio" id="precio" class="control" placeholder="Ej: $40.000">
+                <input type="numero" value= "<%= Product.price %>" name="precio" id="precio" class="control" placeholder="Ej: $40.000">
             </fieldset>
 
            
@@ -38,7 +38,7 @@
                 <label for="recibeNoticias" class="titulo-label">descripcion:</label>
                 <div class="noticias-usuario">
                     <textarea rows="10"  name="descripcion" id="descripcion" class="control">
-                        <%= producto.descripcion %>
+                        <%= Product.description %>
                     </textarea>
                     
                 </div>

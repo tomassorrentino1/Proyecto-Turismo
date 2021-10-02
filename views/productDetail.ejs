@@ -9,13 +9,13 @@
     <main>
       <div class="titulo">
         <h4>
-          <%= producto.nombre %>
+          <%= producto.name %>
         </h4>
       </div>
       <div class="contenedor-imagen-descripcion">
         <div class="contenedor-imagen">
           <div class="img">
-            <img style="width: 431px; height: 316px; display: block;" src="<%= producto.imagen%>" alt="Media image">
+            <img style="width: 431px; height: 316px; display: block;" src="<%= producto.image%>" alt="Media image">
           </div>
           <div>
             <form action="/products/cart" method="GET">
@@ -77,7 +77,7 @@
         </div>
       </div>
       <div>
-        <form action="/products/<%= producto.id  %>/edit " method="GET">
+        <form action="/products/<%= producto.idProduct %>/edit " method="GET">
           <button class="boton-cambiar">Editar Producto</button>
         </form>
         <form action="/products/<%= producto.id %>?_method=DELETE " method="POST">

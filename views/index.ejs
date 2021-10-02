@@ -34,21 +34,21 @@
         </div>
 
         <article class="contenedor-tres-productos">
-            <% products.forEach(element => { %>
+            <% producto.forEach(element => { %>
                 
                 <div class="producto">
                     <div class="foto-producto">
-                        <img src="<%= element.imagen%>" class="foto-producto-chica">
+                        <img src="<%= element.image%>" class="foto-producto-chica">
                         <div class="descripcion-producto">
                             <div>
-                                <h4><%= element.nombre %></h4>
+                                <h4><%= element.name %></h4>
                                 <ul class="lista-productos">
-                                    <li><%= element.descripcion %></li>
+                                    <li><%= element.description%></li>
                                     <br>
-                                    <li><%= element.precio %></li>
+                                    <li><%= element.price%></li>
                                     
                                 </ul>
-                                <a href="/products/<%= element.id %>/detail " class="boton-ver-mas">Ver más</a>
+                                <a href="/products/<%= element.idProduct %>/detail " class="boton-ver-mas">Ver más</a>
                             </div>
                         </div>
                     </div>
