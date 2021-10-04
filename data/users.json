@@ -52,18 +52,6 @@
     "id": 6
   },
   {
-    "name": "Nicolas",
-    "apellido": "Tognella",
-    "fechaNacimiento": "",
-    "pais": "Australia",
-    "ciudad": "Manly",
-    "numero": "+61460622463",
-    "documento": "",
-    "email": "nicolastognella@gmail.com",
-    "password": "$2b$10$Q4bPTKjcqNT0I.P726r.xOfsqry5GvXUEOXjTm/nOQPDtpMFAVMaK",
-    "id": 7
-  },
-  {
     "name": "Nico",
     "apellido": "Tog",
     "fechaNacimiento": "",
