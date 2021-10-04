@@ -74,17 +74,5 @@
     "email": "",
     "password": "$2b$10$QzlO7SZl5W.lzcx7VBit.eIvQ2pvEFwGBo6UMIQL8jLQdDFdSoYYi",
     "id": 8
-  },
-  {
-    "name": "",
-    "apellido": "",
-    "fechaNacimiento": "",
-    "pais": "Afghanistan",
-    "ciudad": "",
-    "numero": "",
-    "documento": "",
-    "email": "",
-    "password": "$2b$10$ioZR50YngDb1TALYaorFWOcG1396XV2TDI79GreV32jfjZlL60b/G",
-    "id": 9
   }
 ]
