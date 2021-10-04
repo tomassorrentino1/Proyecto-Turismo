@@ -3,7 +3,7 @@
     "id": 1,
     "destino": "Cordoba",
     "nombre": "Paquete Los Gigantes",
-    "descripcion": "¿Que incluye? 7 dias de Hospedaje, Desayunos, tour de escalada y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 7 días de Hospedaje, Desayunos, tour de escalada y traslado al aeropuerto",
     "precio": "$50.000",
     "imagen": "/img/cordoba.jpg",
     "categoria": "Aventura"
@@ -12,7 +12,7 @@
     "id": 2,
     "destino": "Córdoba",
     "nombre": "Paquete Córdoba",
-    "descripcion": "¿Que incluye? 7 dias de Hospedaje, desayunos, cenas y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 7 días de Hospedaje, desayunos, cenas y traslado al aeropuerto",
     "precio": "$40.000",
     "imagen": "/img/cordoba.jpg",
     "categoria": "Familiar"
@@ -21,7 +21,7 @@
     "id": 3,
     "destino": "Salta",
     "nombre": "Paquete Salta",
-    "descripcion": "¿Que incluye? 9 dias de hospedaje, desayunos y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 9 días de hospedaje, desayunos y traslado al aeropuerto",
     "precio": "$45.000",
     "imagen": "/img/salta.jpg",
     "categoria": "Parejas"
@@ -30,7 +30,7 @@
     "id": 4,
     "destino": "San Carlos de Bariloche",
     "nombre": "Paquete Catedral",
-    "descripcion": "¿Que incluye? 5 dias de hospedaje, desayunos, pase al Cerro Catedral y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 5 días de hospedaje, desayunos, pase al Cerro Catedral y traslado al aeropuerto",
     "precio": "$48.000",
     "imagen": "/img/Bariloche.jpg",
     "categoria": "Aventura"
@@ -39,7 +39,7 @@
     "id": 5,
     "destino": "San Carlos de Bariloche",
     "nombre": "Paquete Bariloche",
-    "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion a Villa la Angostura y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 8 días de hospedaje, desayunos, excursión a Villa la Angostura y traslado al aeropuerto",
     "precio": "$77.000",
     "imagen": "/img/Bariloche.jpg",
     "categoria": "Familiar"
@@ -48,7 +48,7 @@
     "id": 6,
     "destino": "Chubut",
     "nombre": "Paquete Peninsula de Valdés",
-    "descripcion": "¿Que incluye? 6 dias de hospedaje, desayunos, excursion de avistaje de ballenas y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 6 días de hospedaje, desayunos, excursión de avistaje de ballenas y traslado al aeropuerto",
     "precio": "$52.000",
     "imagen": "/img/Peninsula Valdes.jpg",
     "categoria": "Parejas"
@@ -57,7 +57,7 @@
     "id": 7,
     "destino": "Buenos Aires",
     "nombre": "Paquete Buenos Aires",
-    "descripcion": "¿Que incluye? 7 dias de hospedaje, desayunos, city tour y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 7 días de hospedaje, desayunos, city tour y traslado al aeropuerto",
     "precio": "$50.000",
     "imagen": "/img/Buenos Aires.jpg",
     "categoria": "Familiar"
@@ -66,7 +66,7 @@
     "id": 8,
     "destino": "Santa Cruz",
     "nombre": "Paquete Calafate",
-    "descripcion": "¿Que incluye? 7 dias de hospedaje, desayunos, excursion al Glaciar y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 7 días de hospedaje, desayunos, excursión al Glaciar y traslado al aeropuerto",
     "precio": "$80.000",
     "imagen": "/img/Calafate.jpg",
     "categoria": "Aventura"
@@ -75,7 +75,7 @@
     "id": 9,
     "destino": "Tierra del Fuego",
     "nombre": "Paquete Ushuaia",
-    "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion al Faro del Fin del Mundo y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 8 días de hospedaje, desayunos, excursión al Faro del Fin del Mundo y traslado al aeropuerto",
     "precio": "$70.000",
     "imagen": "/img/Ushuaia.jpg",
     "categoria": "Familiar"
@@ -84,7 +84,7 @@
     "id": 10,
     "destino": "Tierra del Fuego",
     "nombre": "Paquete reserva Lapataia",
-    "descripcion": "¿Que incluye? 8 dias de hospedaje, desayunos, excursion a la reserva Lapataia y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 8 días de hospedaje, desayunos, excursión a la reserva Lapataia y traslado al aeropuerto",
     "precio": "$90.000",
     "imagen": "/img/Ushuaia.jpg",
     "categoria": "Aventura"
@@ -93,7 +93,7 @@
     "id": 11,
     "destino": "Buenos Aires",
     "nombre": "Paquete Delta",
-    "descripcion": "¿Que incluye? 7 dias de hospedaje, desayunos, paseo por el detal y traslado al aeropuerto",
+    "descripcion": "¿Qué incluye? 7 días de hospedaje, desayunos, paseo por el detal y traslado al aeropuerto",
     "precio": "$40.000",
     "imagen": "/img/Buenos Aires.jpg",
     "categoria": "Parejas"
