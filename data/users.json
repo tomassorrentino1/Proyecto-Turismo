@@ -52,30 +52,6 @@
     "id": 6
   },
   {
-    "name": "",
-    "apellido": "Tognella",
-    "fechaNacimiento": "",
-    "pais": "Australia",
-    "ciudad": "Manly",
-    "numero": "+61460622463",
-    "documento": "",
-    "email": "nicolastognella@gmail.com",
-    "password": "$2b$10$9n0EgiTsmFit11XULG67xesL.z9aN96N8XQRAeypgFe/yXvn.UzdG",
-    "id": 7
-  },
-  {
-    "name": "N",
-    "apellido": "Tognella",
-    "fechaNacimiento": "",
-    "pais": "Australia",
-    "ciudad": "Manly",
-    "numero": "+61460622463",
-    "documento": "",
-    "email": "nicolastognella@gmail.com",
-    "password": "$2b$10$K.c6PY3cSvpf3Lz01xa/8.ukQkd/1FLuWYmVCkhHGI363hiQ12Ave",
-    "id": 8
-  },
-  {
     "name": "Nicolas",
     "apellido": "Tognella",
     "fechaNacimiento": "",
@@ -84,7 +60,19 @@
     "numero": "+61460622463",
     "documento": "",
     "email": "nicolastognella@gmail.com",
-    "password": "$2b$10$IbF5j5i5kw3tobCkqJDCJe9xG3o7RBwSJCFtuRAeaUstYbl8fACti",
-    "id": 9
+    "password": "$2b$10$Q4bPTKjcqNT0I.P726r.xOfsqry5GvXUEOXjTm/nOQPDtpMFAVMaK",
+    "id": 7
+  },
+  {
+    "name": "Nico",
+    "apellido": "Tog",
+    "fechaNacimiento": "",
+    "pais": "Australia",
+    "ciudad": "Manly",
+    "numero": "",
+    "documento": "",
+    "email": "nicotonio991@gmail.com",
+    "password": "$2b$10$owSoV22N8Mkd.pOG7H4gwucQqBpGiRTVAzZOXsWycb79rZMKHLZPK",
+    "id": 8
   }
 ]
