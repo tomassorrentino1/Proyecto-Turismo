@@ -50,5 +50,41 @@
     "email": "sorren@gmail.com",
     "password": "$2b$10$7Wlp8cv80FFFB5104QwOluMO.bpUhxWxSweHp/GTAcMbZ2JBlgVJ6",
     "id": 6
+  },
+  {
+    "name": "a",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "",
+    "password": "$2b$10$w5cFFuODxUVAv8bV.bJl5uuOB9QXVbQywx859wLrMXMqN/gZz3oRS",
+    "id": 7
+  },
+  {
+    "name": "",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "",
+    "password": "$2b$10$QzlO7SZl5W.lzcx7VBit.eIvQ2pvEFwGBo6UMIQL8jLQdDFdSoYYi",
+    "id": 8
+  },
+  {
+    "name": "",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "",
+    "password": "$2b$10$ioZR50YngDb1TALYaorFWOcG1396XV2TDI79GreV32jfjZlL60b/G",
+    "id": 9
   }
 ]
