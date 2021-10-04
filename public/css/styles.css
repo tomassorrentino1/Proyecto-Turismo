@@ -48,6 +48,23 @@ main {
     margin: auto;
 }
 
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.fotos-nosotros {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    width: 22%;
+}
+
 .producto {
     display: flex;
     flex-direction: column;
