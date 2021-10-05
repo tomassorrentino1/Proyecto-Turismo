@@ -62,5 +62,17 @@
     "email": "nicotonio991@gmail.com",
     "password": "$2b$10$owSoV22N8Mkd.pOG7H4gwucQqBpGiRTVAzZOXsWycb79rZMKHLZPK",
     "id": 8
+  },
+  {
+    "name": "river",
+    "apellido": "plate",
+    "fechaNacimiento": "",
+    "pais": "Afghanistan",
+    "ciudad": "",
+    "numero": "",
+    "documento": "",
+    "email": "river@gmail.com",
+    "password": "$2b$10$KyiqgqXt87ENIQFsTW9hy.GJhv4ItrLzvdhrbXe6Bq6pobX3iJBoq",
+    "id": 9
   }
 ]
