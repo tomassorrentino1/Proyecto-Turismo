@@ -10,13 +10,24 @@ const saltRounds = 10;
 const { validationResult } = require('express-validator');
 const { profile } = require('console');
 
+const db = require('../database/models');
+const sequelize = db.sequelize;
 
+const User = db.usuarios;
+ 
 
 
 let usersController = {
     login: function(req, res, next) {
         res.render('login');
       },
+
+      'list':  async (req, res) => {
+        db.User.findAll()
+            .then(usuario => {
+                res.render('users', { usuario })
+            })
+          },
 
     loginStore: (req, res) => {
 

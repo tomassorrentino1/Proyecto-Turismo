@@ -1,5 +1,7 @@
-module.exports = function (sequelize, dataTypes) {
+//const { UPSERT } = require("sequelize/types/lib/query-types");
 
+module.exports = function (sequelize, dataTypes) {
+    
     let alias = "Usuario";
     let cols = {
         id: {
@@ -28,7 +30,7 @@ module.exports = function (sequelize, dataTypes) {
         tableName: "usuarios",
         timestamps: false
     }
-
+  
 
     let usuarios = sequelize.define(alias, cols, config);
 

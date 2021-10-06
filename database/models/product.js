@@ -46,5 +46,7 @@ module.exports = function (sequelize, dataTypes) {
         })
 
     }
+
+     
     return Product;
 }

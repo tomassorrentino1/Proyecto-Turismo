@@ -20,4 +20,8 @@ router.post('/login', usersController.loginStore);
 //Profile
 router.get('/profile', authMiddleware, usersController.profile);
 
+//Listado de usuarios
+
+router.get('/', usersController.list);
+
 module.exports = router;
