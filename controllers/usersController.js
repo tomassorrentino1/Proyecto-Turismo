@@ -13,7 +13,7 @@ const { profile } = require('console');
 const db = require('../database/models');
 const sequelize = db.sequelize;
 
-const User = db.usuarios;
+const User = db.Usuario;
  
 
 
@@ -23,7 +23,7 @@ let usersController = {
       },
 
       'list':  async (req, res) => {
-        db.User.findAll()
+        User.findAll()
             .then(usuario => {
                 res.render('users', { usuario })
             })
