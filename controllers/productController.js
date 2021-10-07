@@ -129,16 +129,27 @@ let productController = {
       
     },
 
-    update: (req, res) =>{
+    update: async function (req, res) {
+
+      const productoEditado = await Product.update(
+          req.body,
+          {
+              where: {
+                  idProduct: req.params.id
+              }
+          }
+      );
+      return res.send(productoEditado)
+   // update: (req, res) =>{
       
       // ENCONTRAR EL INDICE DEL PRODUCTO EN EL ARRAY
       // EN BASE A SU ID
-      const indiceDelProducto = products.findIndex( producto => producto.id == req.params.id);
+     // const indiceDelProducto = products.findIndex( producto => producto.id == req.params.id);
       
       
       
        //products[indice encontrado] == producto en el array
-      products[indiceDelProducto] = { ...products[indiceDelProducto] , ...req.body };
+      //products[indiceDelProducto] = { ...products[indiceDelProducto] , ...req.body };
      
       
       
@@ -148,10 +159,10 @@ let productController = {
       
 
       // GUARDAR LA NUEVA BASE DE DATOS
-      fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
+      //fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2))
       
   
-      res.redirect(303, '/');
+      //res.redirect(303, '/');
     },
 
     // Delete - Delete one product from DB

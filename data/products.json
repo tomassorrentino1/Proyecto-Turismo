@@ -2,9 +2,9 @@
   {
     "id": 1,
     "destino": "Cordoba",
-    "nombre": "Paquete Los Gigantes",
-    "descripcion": "¿Qué incluye? 7 días de Hospedaje, Desayunos, tour de escalada y traslado al aeropuerto",
-    "precio": "$50.000",
+    "nombre": "Paquete Los Giga",
+    "descripcion": "                        ¿Que incluye? 7 dias de Hospedaje, Desayunos, tour de escalada y traslado al aeropuerto\r\n                    ",
+    "precio": "50000",
     "imagen": "/img/cordoba.jpg",
     "categoria": "Aventura"
   },
