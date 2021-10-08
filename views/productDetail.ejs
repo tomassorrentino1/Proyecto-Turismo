@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
 
-    <link rel="stylesheet" href="/css/productDetail.css">
+<head>
+
+  <link rel="stylesheet" href="/css/productDetail.css">
 </head>
+
 <body>
   <%- include('./partials/header') %>
 
@@ -25,9 +26,6 @@
               <button class="comprar">Comprar</button>
             </form>
 
-            <form action="/products/cart" method="GET">
-              <button class="comprar">Comprar</button>
-            </form>
 
           </div>
         </div>
@@ -43,14 +41,6 @@
                       class="fas fa-suitcase-rolling"></i></span></P>
                 <P>VUELTA mar. 27 de jul. a las 13.30 | Directo <span class="valija"><i
                       class="fas fa-suitcase-rolling"></i></span></P>
-
-                <P>VUELTA mar. 27 de jul. a las 13.30 | Directo <span class="valija"><i
-                      class="fas fa-suitcase-rolling"></i></span></P>
-
-                <div>
-                  <h5>¿Querés cambiar el vuelo?</h5>
-                  <input type="date" name="fecha">
-                </div>
             </ul>
           </div>
           <div class="descripcion-detalle">
@@ -60,7 +50,7 @@
               <p>
                 <%= producto.description %>
               </p>
-              
+
             </ul>
           </div>
           <div class="descripcion-detalle">
@@ -99,4 +89,5 @@
     </main>
     <%- include('./partials/footer') %>
 </body>
+
 </html>
