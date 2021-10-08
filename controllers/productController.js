@@ -53,8 +53,21 @@ let productController = {
         res.render('productCreate');
     },
 
+    add: async function (req, res) {
+      // Recibo los datos del formulario completado en la petición
+      // req.body == { name: valor, rating: valor }
+
+      try {
+          const productoCreado = await Product.create(req.body)
+          return res.send(productoCreado);
+      } catch (error) {
+          console.log(error);
+          return res.send('Hubo un error')
+      }
+
+
     // Create -  Method to store
-	store: (req, res) => {
+	//store: (req, res) => {
 
 		// BUSCO EL ULTIMO PRODUCTO DEL ARRAY, 
 		// REQUIERO EL BODY DEL PRODUCTO Y OBTENGO SU CAMPO ID 
@@ -63,17 +76,17 @@ let productController = {
 		// 16 
 		// products[15]
 
-		const lastProduct = products[products.length - 1]
+		  //const lastProduct = products[products.length - 1]
 		
-		const productToCreate = req.body;
+		//const productToCreate = req.body;
   
-    productToCreate.id = lastProduct.id + 1;
+    //productToCreate.id = lastProduct.id + 1;
 
-    products.push(productToCreate);
+    //products.push(productToCreate);
 
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+    //fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
 
-    res.send(products);
+    //res.send(products);
     //console.log(productToCreate);
 		// productToCreate.id significa
 		// si existe la clave id en el objeto literal productToCreate
@@ -130,7 +143,7 @@ let productController = {
     },
 
     update: async function (req, res) {
-
+      
       const productoEditado = await Product.update(
           req.body,
           {
@@ -139,6 +152,7 @@ let productController = {
               }
           }
       );
+
       return res.send(productoEditado)
    // update: (req, res) =>{
       

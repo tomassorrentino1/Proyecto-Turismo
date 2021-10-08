@@ -20,7 +20,7 @@ router.get('/', productController.list);
 // Crear producto
 
 router.get('/create', authMiddleware, productController.create);
-router.post('/', productController.store); 
+router.post('/', productController.add); 
 
 // Un solo producto
 
