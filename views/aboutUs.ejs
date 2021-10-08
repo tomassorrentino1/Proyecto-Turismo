@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
-    
-    <body>
-    <%- include('./partials/header')  %> 
-    <main>
-        
-    <div class="contenedorAboutUs">
-    <h1 class="aboutUs">About us</h1>
 
-    <section class="nosotros">
-    <div>
-        <img src="/public/img/sur.jpg" class="fotos-nosotros">
-        <h4>Lautaro Messa</h4> 
-    </div>
+<head>
 
-    <div>
-        <img src="" class="fotos-nosotros">
-        <h4>Tomás Sorrentino</h4> 
-    </div>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
 
-    <div>
-        <img src="/public/img/Mauro Patat.jpg" class="fotos-nosotros">
-        <h4>Mauro Patat</h4> 
-    </div>
+<body>
+    <%- include('./partials/header') %>
+        <main>
 
-    <div>
-        <img src="/public/img/foto 4x4.jpg" class="fotos-nosotros">
-        <h4>Nicolás Tognella</h4> 
-    </div>
-    </section>
+            <div class="contenedorAboutUs">
+                <h1 class="aboutUs">¿Quiénes somos?</h1>
 
-    <ul class="descaboutUs">Somos una agencia de viajes que vende paquetes de turismo para los imperdibles de Argentina.
-    <ul class="descaboutUs">Tenemos paquetes que incluyen los destinos: 
-    Norte argentino, Cataratas, Buenos Aires, Mendoza, Bariloche y San Martín de los Andes, Península de Valdez, Calafate, Chalten y Ushuaia.
-    </ul>
-</div>
+                <section class="nosotros">
+                    <div>
+                        <img src="/img/sur.jpg" class="fotos-nosotros">
+                        <h2>Lautaro Messa</h2>
+                    </div>
+
+                    <div>
+                        <img src="" class="fotos-nosotros">
+                        <h2>Tomás Sorrentino</h2>
+                    </div>
+
+                    <div>
+                        <img src="/img/Mauro Patat.jpg" class="fotos-nosotros">
+                        <h2>Mauro Patat</h2>
+                    </div>
+
+                    <div>
+                        <img src="/img/foto 4x4.jpg" class="fotos-nosotros">
+                        <h2>Nicolás Tognella</h2>
+                    </div>
+                </section>
 
 
+                <ul class="descaboutUs">Somos una agencia de viajes que vende paquetes de turismo para los imperdibles
+                    de Argentina.
+                    <ul class="descaboutUs">Tenemos paquetes que incluyen los destinos:
+                        Norte argentino, Cataratas, Buenos Aires, Mendoza, Bariloche y San Martín de los Andes,
+                        Península de Valdez, Calafate, Chalten y Ushuaia.
+                    </ul>
+            </div>
 
-    <div class="contenedorContact">
-    <h1 class="contact">Contactanos</h1>
+            <div class="descaboutUs">
+                <h2> Nuestra Visión: </h2>
+                Ser la empresa y operador líder basada en los imperdibles de Argentina. Brindando servicios de alta
+                calidad de manera personalizada y basandonos en
+                la plena satisfacción de nuestros clientes.
+            </div>
 
-    <ul class="listaContactos">
-        <a href="tel: 47345887"><ion-icon name="call-sharp"></ion-icon> 47431446</a>
-        <br>
-        <a href="mailto: exploraarg@gmail.com" ><ion-icon name="mail-sharp"></ion-icon>exploraarg@gmail.com</a>
-        <br>
-        <a href="https://www.instagram.com/exploraarg/"><ion-icon name="logo-instagram"></ion-icon>@exploraarg</a>
-    </ul>
-    </div>
+            <div class="descaboutUs">
+                <h2>Nuestra Mision:</h2>
+                Proveer un servicio integral y de calidad contribuyendo a la sustentabilidad del turismo local y
+                posicionando los imperdibles en el mercado turístico nacional e internacional.
+
+                Brindar atención completa al pasajero antes, durante y después de su viaje. Mediante nuestros canales de
+                comunicación basados en una moderna, dinámica y amigable página WEB; presencia en distintas redes
+                sociales y atención telefónica los 365 días del año.
+            </div>
+
+            <div class="descaboutUs">
+                <h2> ¿Por qué elegirnos? </h2>
+                Conocemos el producto al 100%
+                Brindamos asesoramiento integral y opciones de viaje personalizados
+                Reserva completa de servicios garantizando los mejores precios y calidad de los mismos
+                Excursiones a destinos y atractivos no convencionales (donde no todos llegan)
+                Diversas modalidades de transporte: en avión, vehículo 4x4 y/o automóvil y motocicletas rentada
+            </div>
+
+
+
+            <div class="contenedorContact">
+                <h1 class="contact">Contactanos</h1>
+
+                <ul class="listaContactos">
+                    <a href="tel: 47345887">
+                        <ion-icon name="call-sharp"></ion-icon> Tel.: 4743-1446
+                    </a>
+                    <br>
+                    <a href="mailto: exploraarg@gmail.com">
+                        <ion-icon name="mail-sharp"></ion-icon>Email: exploraarg@gmail.com
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/exploraarg/">
+                        <ion-icon name="logo-instagram"></ion-icon> Instagram: @exploraarg
+                    </a>
+                </ul>
+            </div>
 
 
 
 
-    </main>
-    <%- include('./partials/footer')  %> 
-    </body>
+        </main>
+        <%- include('./partials/footer') %>
+</body>
 
 </html>

@@ -59,10 +59,11 @@ main {
 }
 
 .fotos-nosotros {
+    margin: auto;
     display: flex;
     flex-direction: column;
     margin-bottom: 4rem;
-    width: 22%;
+    width: 32%;
 }
 
 .producto {
@@ -447,7 +448,7 @@ footer a, footer a:hover {
     text-align: center;
     text-justify: auto;
     width: 800;
-
+    margin-bottom: 40px;
 
 }
 

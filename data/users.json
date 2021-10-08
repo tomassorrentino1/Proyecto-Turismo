@@ -165,5 +165,35 @@
     "password": "$2b$10$IT/FXOCaL4SaQCUZbm3wr.v7iL.kJl3fR2sYbaqXB.zjghfEaQkmW",
     "image": "",
     "id": 16
+  },
+  {
+    "name": "lautaro",
+    "apellido": "messa",
+    "fechaNacimiento": "1995-04-05",
+    "sexo-usuario": "on",
+    "pais": "Argentina",
+    "ciudad": "Caba",
+    "numero": "01140833959",
+    "documento": "38991023",
+    "email": "lautaromessa@gmail.com",
+    "password": "$2b$10$53GM19/EghirpoCwxuSCZeVa5aIhgRZop9jIJEK3L2n4KuJ20FFd2",
+    "image": "foto carnet.jpg",
+    "noticias-usuario": "on",
+    "id": 17
+  },
+  {
+    "name": "lautaro",
+    "apellido": "messa",
+    "fechaNacimiento": "1995-04-05",
+    "sexo-usuario": "on",
+    "pais": "Argentina",
+    "ciudad": "Caba",
+    "numero": "01140833959",
+    "documento": "38991023",
+    "email": "lautaromessa@gmail.com",
+    "password": "$2b$10$JJx/E6QBOr14wuQ7uMlb.OLyhkABTuOAJodG6MYyyw6i0.OyzUDMu",
+    "image": "foto carnet.jpg",
+    "noticias-usuario": "on",
+    "id": 18
   }
 ]
