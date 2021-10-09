@@ -20,13 +20,28 @@
     
                 <fieldset class="control-formulario">
                     <label for="name" class="label-form">Nombre del producto:</label>
-                    <input type="text" class="control" id="name" name="nombre" placeholder="Ej: Paquete Iguazu">
+                    <input type="text" class="control" id=" " required name="name" placeholder="Ej: Paquete Iguazu">
+                </fieldset>
+
+                <fieldset class="control-formulario">
+                    <label for="name" class="label-form">ID del producto:</label>
+                    <input type="text" class="control" id=" " required name="idProduct" placeholder="Ej: Paquete Iguazu">
+                </fieldset>
+
+                <fieldset class="control-formulario">
+                    <label for="name" class="label-form">ID del destino:</label>
+                    <input type="text" class="control" id=" " required name="destination_id" placeholder="Ej: Paquete Iguazu">
+                </fieldset>
+    
+                <fieldset class="control-formulario">
+                    <label for="name" class="label-form">ID de categoria:</label>
+                    <input type="text" class="control" id=" " required name="category_id" placeholder="Ej: Paquete Iguazu">
                 </fieldset>
     
                 
                 <fieldset class="control-formulario">
                     <label for="precio" class="label-form">Precio:</label>
-                    <input type="numero" name="precio" id="precio" class="control" placeholder="Ej: $40.000">
+                    <input type="numero" name="price" id="precio" class="control" placeholder="Ej: $40.000">
                 </fieldset>
                 
                  <!--el valor que le doy a la imagen cargada en el id del input, es el nombre que debo usar en el middleware dentro de la ruta que llama el multer-->
@@ -38,9 +53,10 @@
                 <fieldset class="control-formulario">
                     <label for="recibeNoticias" class="label-form">Descripción:</label>
                     <div class="noticias-usuario">
-                        <textarea rows="4" cols="50" name="descripcion" id="description" class="control description"></textarea> 
+                        <textarea rows="4" cols="50" name="description" id="description" class="control description"></textarea> 
                     </div>
                 </fieldset>
+                
     
                 <fieldset class="control-formulario">
                     <button type="submit" class="boton-formulario">Guardar Producto</button>

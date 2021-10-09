@@ -153,7 +153,7 @@ let productController = {
           }
       );
 
-      return res.send(productoEditado)
+      res.redirect(303, '/');
    // update: (req, res) =>{
       
       // ENCONTRAR EL INDICE DEL PRODUCTO EN EL ARRAY
@@ -180,7 +180,9 @@ let productController = {
     },
 
     // Delete - Delete one product from DB
-	destroy : (req, res) => {
+	destroy : async function (req, res) {
+    await Product.destroy({where: {idProduct: req.params.id}})
+   //(req, res) => {
 		// Do the magic
 
 		// Buscar el producto con el id recibido por parametros en el array
@@ -190,12 +192,12 @@ let productController = {
 		// Filter
 		
 
-		const nuevoArray = products.filter( (product) => product.id != req.params.id  );
+		//const nuevoArray = products.filter( (product) => product.id != req.params.id  );
 		// Todos los productos cuyo id sea diferente al enviado por parámetro
 
     
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(nuevoArray, null, 2));
+		//fs.writeFileSync(productsFilePath, JSON.stringify(nuevoArray, null, 2));
 
 		
 		// session.mensaje = 'Producto creado';
