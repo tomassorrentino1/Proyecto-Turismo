@@ -59,12 +59,13 @@ let productController = {
 
       try {
           const productoCreado = await Product.create(req.body)
-          return res.send(productoCreado);
+          res.redirect(303, '/');
       } catch (error) {
           console.log(error);
           return res.send('Hubo un error')
       }
 
+      
 
     // Create -  Method to store
 	//store: (req, res) => {

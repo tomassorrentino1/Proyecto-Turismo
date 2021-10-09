@@ -72,8 +72,6 @@ let usersController = {
 
     try {
       const usuarioCreado = await User.create(req.body)
-      const lastUser = User[U.length - 1];
-      usuarioCreado.id = lastUser.id +1;
       usuarioCreado.password = bcrypt.hashSync(req.body.password, saltRounds)
       return res.send(usuarioCreado);
       
