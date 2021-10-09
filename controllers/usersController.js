@@ -66,21 +66,37 @@ let usersController = {
       res.render('register');
 },
 
-    registerStore: (req, res) =>{
-      const lastUser = users[users.length - 1]
+    registerStore: async function (req, res){ 
+    
+    
+
+    try {
+      const usuarioCreado = await User.create(req.body)
+      const lastUser = User[U.length - 1];
+      usuarioCreado.id = lastUser.id +1;
+      usuarioCreado.password = bcrypt.hashSync(req.body.password, saltRounds)
+      return res.send(usuarioCreado);
+      
+  } catch (error) {
+      console.log(error);
+      return res.send('Hubo un error')
+  }
+
+    //(req, res) =>{
+      //const lastUser = users[users.length - 1]
 
       
 
-      const userToCreate = req.body;
+      //const userToCreate = req.body;
 
-      userToCreate.id = lastUser.id + 1;
+      //userToCreate.id = lastUser.id + 1;
       
       
 
-      userToCreate.password = bcrypt.hashSync(req.body.password, saltRounds)
+     
 
-      users.push(userToCreate);
-      fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2))
+      //users.push(userToCreate);
+      //fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2))
       
 
       res.redirect(303, '/')
