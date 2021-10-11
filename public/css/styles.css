@@ -285,6 +285,7 @@ a:hover {
     margin-bottom: 15px;
     border: none;
     width: 31%;
+    margin: auto;
 }
 
 .control-formulario select {
@@ -334,7 +335,6 @@ a:hover {
 }
 
 .contenedor-form-register {
-    border: black 3px solid;
     padding: 30px;
     width: 70%;
     margin: auto;
