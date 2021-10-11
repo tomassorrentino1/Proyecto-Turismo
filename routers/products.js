@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const authMiddleware = require('../middlewares/authMiddleware');
-
+const {body} = require ('express-validator')
 const productController = require('../controllers/productController');
 
 //configuracion almacenamiento multer
@@ -24,6 +24,12 @@ const storage = multer.diskStorage({
 })
 const upload = multer({storage})
 
+// express validation
+const validateCreateProduct = [
+    body("name").notEmpty().withMessage("El campo nombre no debe estar vacio"),
+    body("description").notEmpty().withMessage("El campo descripcion no debe estar vacio"),
+    body("image").notEmpty().withMessage('Por favor seleccionar una imagen')
+]
 // Product Cart
 
 router.get('/cart', productController.cart);
@@ -39,7 +45,7 @@ router.get('/', productController.list);
 // Crear producto
 
 router.get('/create', authMiddleware, productController.create);
-router.post('/', upload.single ('image'), productController.add); 
+router.post('/', upload.single ('image'),validateCreateProduct, productController.add); 
 
 // Un solo producto
 
