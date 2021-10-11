@@ -2,8 +2,17 @@ const express = require('express');
 const router = express.Router();
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
+const { body } = require("express-validator")
 
 let usersController = require('../controllers/usersController');
+
+//Validaciones
+
+const validateCreateForm = [
+    body("first_name").notEmpty().withMessage("Debes completar el campo de nombre"),
+    body("last_name").notEmpty().withMessage("Debes completar el campo de apellido"),
+    body("email").isEmail().withMessage("Debes completar un email válido")
+]
 
 const multer = require('multer')
 
@@ -23,7 +32,7 @@ const upload = multer({storage})
 // Register
 
 router.get('/register', guestMiddleware, usersController.register);
-router.post('/register', upload.single ('image'), usersController.registerStore);
+router.post('/register', upload.single ('image'), validateCreateForm, usersController.registerStore);
 
 
 // Login
