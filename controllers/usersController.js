@@ -26,22 +26,24 @@ let usersController = {
     });
   },
 
-  loginStore: (req, res) => {
+  loginStore: async (req, res) => {
     // Buscar en users.json
     // Un usuario cuyo mail sea igual al req.body.email
 
-    const userToLogin = users.find((user) => user.email == req.body.email);
+    const userToLogin = await User.findOne({where: {email: req.body.email}});
     if (!userToLogin) {
       return res.send("este usuario no existe");
     }
 
-    // Comparar la contraseña del usuario de la base con la enviada en la petición
+    
 
+    // Comparar la contraseña del usuario de la base con la enviada en la petición
+    console.log(userToLogin)
     const comparacion = bcrypt.compareSync(
       req.body.password,
       userToLogin.password
     );
-
+      console.log(comparacion, req.body.password, userToLogin.password);
     if (comparacion) {
       req.session.user = userToLogin;
       req.session.userLogged = userToLogin;
@@ -55,9 +57,10 @@ let usersController = {
   },
 
   registerStore: async function (req, res) {
-    try {
+    try { 
       const usuarioCreado = await User.create(req.body);
       usuarioCreado.password = bcrypt.hashSync(req.body.password, saltRounds);
+      await usuarioCreado.save();
       return res.send(usuarioCreado);
     } catch (error) {
       console.log(error);
