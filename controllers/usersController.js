@@ -47,7 +47,7 @@ let usersController = {
     if (comparacion) {
       req.session.user = userToLogin;
       req.session.userLogged = userToLogin;
-      res.render("productCreate");
+      res.render("profileg");
       //return res.redirect('/', 301)
     } else res.send("contraseña incorrecta");
   },
