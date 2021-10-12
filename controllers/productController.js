@@ -58,13 +58,22 @@ let productController = {
       // Recibo los datos del formulario completado en la petición
       // req.body == { name: valor, rating: valor }
 
-      try {
+      let errors = validationResult (req);
+      if (errors.isEmpty()) {
+        try {
           const productoCreado = await Product.create(req.body)
           res.redirect(303, '/');
       } catch (error) {
           console.log(error);
           return res.send('Hubo un error')
       }
+        
+      } else {
+        res.render ('productCreate', {
+        old: req.body})
+        
+      }
+     
 
       
 

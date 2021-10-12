@@ -35,8 +35,6 @@ let usersController = {
       return res.send("este usuario no existe");
     }
 
-    
-
     // Comparar la contraseña del usuario de la base con la enviada en la petición
     console.log(userToLogin)
     const comparacion = bcrypt.compareSync(
@@ -47,37 +45,37 @@ let usersController = {
     if (comparacion) {
       req.session.user = userToLogin;
       req.session.userLogged = userToLogin;
-      res.render("profileg");
+      res.render("profile");
       //return res.redirect('/', 301)
     } else res.send("contraseña incorrecta");
   },
 
   register: function (req, res, next) {
     res.render("register");
+
   },
+  
 
   registerStore: async function (req, res) {
-    try { 
-      const usuarioCreado = await User.create(req.body);
-      usuarioCreado.password = bcrypt.hashSync(req.body.password, saltRounds);
-      await usuarioCreado.save();
-      return res.send(usuarioCreado);
-    } catch (error) {
-      console.log(error);
-      return res.send("Hubo un error");
+    
+   let errors = validationResult (req);
+    if (errors.isEmpty()) {
+      try { 
+        const usuarioCreado = await User.create(req.body);
+        usuarioCreado.password = bcrypt.hashSync(req.body.password, saltRounds);
+        await usuarioCreado.save();
+        return res.send(usuarioCreado);
+      } catch (error) {
+        console.log(error);
+        return res.send("Hubo un error");
+      }; 
+      
+    } else {
+      res.render ('register', {
+      old: req.body})
+      
     }
-
-    //(req, res) =>{
-    //const lastUser = users[users.length - 1]
-
-    //const userToCreate = req.body;
-
-    //userToCreate.id = lastUser.id + 1;
-
-    //users.push(userToCreate);
-    //fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2))
-
-    res.redirect(303, "/");
+      
   },
 
   profile: function (req, res, next) {
