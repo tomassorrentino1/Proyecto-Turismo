@@ -54,9 +54,22 @@ let usersController = {
 
   register: function (req, res, next) {
     res.render("register");
+
   },
+  
 
   registerStore: async function (req, res) {
+    
+   /* let errors = validationResult (req);
+    
+    if (errors.isEmpty()) {
+      
+    } else {
+      res.render ('register', {errors: errors.mapped(), old: req.body})
+      
+    };  
+   */
+    
     try { 
       const usuarioCreado = await User.create(req.body);
       usuarioCreado.password = bcrypt.hashSync(req.body.password, saltRounds);
@@ -65,7 +78,9 @@ let usersController = {
     } catch (error) {
       console.log(error);
       return res.send("Hubo un error");
-    }
+    };
+
+
 
     //(req, res) =>{
     //const lastUser = users[users.length - 1]

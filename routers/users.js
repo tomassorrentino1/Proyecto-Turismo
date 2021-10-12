@@ -10,8 +10,12 @@ let usersController = require('../controllers/usersController');
 
 const validateCreateForm = [
     body("first_name").notEmpty().withMessage("Debes completar el campo de nombre"),
+    body("first_name").isLength({min: 2}).withMessage("Debe tener al menos 2 caracteres"),
     body("last_name").notEmpty().withMessage("Debes completar el campo de apellido"),
-    body("email").isEmail().withMessage("Debes completar un email válido")
+    body("last_name").isLength({min: 2}).withMessage("Debe tener al menos 2 caracteres"),
+    body("email").isEmail().withMessage("Debes completar un email válido"),
+    body("password").notEmpty().withMessage("Debes completar una contrasena"),
+    body("image").notEmpty().withMessage("Debes cargar una imagen")
 ]
 
 const multer = require('multer')
