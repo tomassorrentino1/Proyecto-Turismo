@@ -13,8 +13,10 @@ const validateCreateForm = [
     body("first_name").isLength({min: 2}).withMessage("Debe tener al menos 2 caracteres"),
     body("last_name").notEmpty().withMessage("Debes completar el campo de apellido"),
     body("last_name").isLength({min: 2}).withMessage("Debe tener al menos 2 caracteres"),
+    body("email").notEmpty().withMessage("Debes completar el campo de email"),
     body("email").isEmail().withMessage("Debes completar un email válido"),
     body("password").notEmpty().withMessage("Debes completar una contrasena"),
+    body("password").isLength({min: 8}).withMessage("Debe tener al menos 8 caracteres"),
     body("image").notEmpty().withMessage("Debes cargar una imagen")
 ]
 
@@ -42,7 +44,7 @@ router.post('/register', upload.single ('image'), validateCreateForm, usersContr
 // Login
 
 router.get('/login', guestMiddleware, usersController.login);
-router.post('/login', usersController.loginStore);
+router.post('/login',validateCreateForm, usersController.loginStore);
 
 //Profile
 router.get('/profile', authMiddleware, usersController.profile);

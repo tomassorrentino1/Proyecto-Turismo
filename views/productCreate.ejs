@@ -20,7 +20,8 @@
     
                 <fieldset class="control-formulario">
                     <label for="name" class="label-form">Nombre del producto:</label>
-                    <input type="text" class="control" id="name"  name="name" placeholder="Ej: Paquete Iguazu">
+                    <input type="text" class="control" id="name"  name="name" 
+                    value='<%= locals.old && old.name ? old.name : ''  %>' placeholder="Ej: Paquete Iguazu">
                 </fieldset>
 
                 
@@ -50,7 +51,8 @@
                 <fieldset class="control-formulario">
                     <label for="recibeNoticias" class="label-form">Descripción:</label>
                     <div class="noticias-usuario">
-                        <textarea rows="4" cols="50" name="description" id="description" class="control description"></textarea> 
+                        <textarea rows="4" cols="50" name="description" id="description" class="control description"
+                        value='<%= locals.old && old.description ? old.description : ''  %>'></textarea> 
                     </div>
                 </fieldset>
                 

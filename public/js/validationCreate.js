@@ -38,12 +38,13 @@ window.addEventListener("load", () => {
     }
 
     if (password.value == "") {
-      alert("El campo contraseña no debe estar vacio");
-      errores.push(" ");
+      alert ('El campo contraseña debe no debe estar vacio')
+      errores.push(" ")  
     } else if (password.value.length < 8) {
       alert("El campo contraseña debe tener al menos 8 caracteres");
       errores.push(" ");
     }
+    
     //ver si se cargo una imagen
     /*console.log(FileUploadPath);
     if (FileUploadPath == "") {

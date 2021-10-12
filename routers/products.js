@@ -27,7 +27,8 @@ const upload = multer({storage})
 // express validation
 const validateCreateProduct = [
     body("name").notEmpty().withMessage("El campo nombre no debe estar vacio"),
-    body("description").notEmpty().withMessage("El campo descripcion no debe estar vacio"),
+    body("name").isLength({min: 5}).withMessage("Debe tener al menos 5 caracteres"),
+    body("description").isLength({min: 20}).withMessage("Debe tener al menos 20 caracteres"),
     body("image").notEmpty().withMessage('Por favor seleccionar una imagen')
 ]
 // Product Cart

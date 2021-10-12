@@ -18,3 +18,19 @@ Referentes del mercado: Elegimos estas agencias que venden paquetes de viaje de 
 -https://tipgroup.travel/
 
 Link al tablero de trabajo: https://trello.com/b/vns3qVgF/explora-argentina
+
+
+Errores:
+
+User register:
+Front end: validation de password e image, no andan
+Back end: Cuando salta la validacion back, anula el mensaje front
+Como configurar: No puede repetirse con los e-mails ya registrados.
+Multer ya valida el formato de la imagen no?
+
+Log in:
+Cuando salta la validacion back, anula el mensaje front
+
+ProductCreate:
+el value para textArea no funciona
+Multer ya valida el formato de la imagen no?

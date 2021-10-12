@@ -25,7 +25,8 @@
                 </div>
 
                 <fieldset class="control-formulario">
-                    <input type="text" name="email" id="email" class="email" placeholder="Ingresá tu email:"
+                    <input type="text" name="email" id="email" class="email" 
+                    value='<%= locals.old && old.email ? old.email : ""  %>' placeholder="Ingresá tu email:"
                         minlength="4" maxlength="40">
                 </fieldset>
 

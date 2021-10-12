@@ -17,12 +17,14 @@
 
             <fieldset class="control-formulario">
                 <label for="name" class="label-form">Nombre:</label>
-                <input type="text" name="first_name" id="name" class="control" placeholder="Ej: Juan">
+                <input type="text" name="first_name" id="name" class="control" 
+                value='<%= locals.old && old.first_name ? old.first_name : ''  %>' placeholder="Ej: Juan">
             </fieldset>
 
             <fieldset class="control-formulario">
                 <label for="apellido" class="label-form">Apellido:</label>
-                <input type="text" name="last_name" id="lastname" class="control" placeholder="Ej: Perez">
+                <input type="text" name="last_name" id="lastname" class="control"
+                value='<%= locals.old && old.last_name ? old.last_name : ''  %>' placeholder="Ej: Perez">
             </fieldset>
 
             <fieldset class="control-formulario">
@@ -70,7 +72,8 @@
 
             <fieldset class="control-formulario">
                 <label for="email" class="label-form">Email:</label>
-                <input type="text" name="email" id="email" class="control" placeholder="Ej: juanperez@gmail.com">
+                <input type="text" name="email" id="email" class="control"
+                value='<%= locals.old && old.email ? old.email : ''  %>' placeholder="Ej: juanperez@gmail.com">
             </fieldset>
 
             <fieldset class="control-formulario">
@@ -80,7 +83,7 @@
 
             <fieldset class="control-formulario">
                  <label for="image" class="label-form">Imagen</label>
-                 <input type="file" id=" " class="control" name="image" accept=".jpg, .png">
+                 <input type="file" id="image" class="control" name="image" accept=".jpg, .png" >
             </fieldset>
 
             
@@ -112,8 +115,8 @@
     </div>
 
     <%- include('./partials/footer')  %> 
-
-  <script src= '/js/validationCreate.js' charset="utf-8" type="text/javascript"></script>
-</body>
+    <script src= '/js/validationCreate.js' charset="utf-8" type="text/javascript"></script>
+   
+ </body>
 
 </html>
