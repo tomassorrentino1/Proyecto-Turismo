@@ -4,6 +4,7 @@
 <head>
    
     <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -18,75 +19,35 @@
                 <tr>
                     <th>Producto</th>
                     <th>Cantidad</th>
-                    <th>Subtotal</th>
+                    <th>Total</th>
                 </tr>
                 <tr>
                     <td>
                         <div class="info">
                             <img class="imagen-paquete" src="/img/mendoza.jpg">
                             <div>
-                                <p>Paquete Mendoza</p>
-                                <small>Precio: $50.000</small>
+                                <p><%= producto.name %></p>
+                                <p><%= producto.description %></p>
+                                <small>$<%= producto.price %></small>
                                 <br>
-                                <a href="">Borrar</a>
+                                
                             </div>
                         </div>
                     </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$50.000</td>
+                    <td><input  value="1"></td>
+                    <td>$<%=producto.price%></td>
                 </tr>
-                <tr>
-                    <td>
-                        <div class="info">
-                            <img class="imagen-paquete" src="/img/cordoba.jpg">
-                            <div>
-                                <p>Paquete Córdoba</p>
-                                <small>Precio: $60.000</small>
-                                <br>
-                                <a href="">Borrar</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$60.000</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="info">
-                            <img class="imagen-paquete" src="/img/salta.jpg">
-                            <div>
-                                <p>Paquete Salta</p>
-                                <small>Precio: $30.000</small>
-                                <br>
-                                <a href="">Borrar</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type="number" value="1"></td>
-                    <td>$30.000</td>
-                </tr>
+                
+                
             </table>
 
             <div class="precio-total">
 
-                <table>
-                    <tr>
-                        <td>Subtotal</td>
-                        <td>$140.000</td>
-                    </tr>
-                    <tr>
-                        <td>Impuestos</td>
-                        <td>$30.000</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>$170.000</td>
-                    </tr>
-                </table>
+                
 
             </div>
             <div class="padre">
-            <button class="boton">Pagar</button>
+            <button class="comprar">Pagar</button>
             </div>
 
         </div>

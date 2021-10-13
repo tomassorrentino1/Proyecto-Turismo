@@ -33,7 +33,7 @@ const validateCreateProduct = [
 ]
 // Product Cart
 
-router.get('/cart', productController.cart);
+router.get('/:id/cart', productController.cart);
 
 // Product Detail
 
