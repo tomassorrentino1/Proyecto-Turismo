@@ -11,8 +11,11 @@ const sequelize = db.sequelize;
 const Product = db.Product;
 
 let productController = {
-    cart: function(req, res, next) {
-        res.render('productCart');
+    'cart': function(req, res, next) {
+        db.Product.findByPk(req.params.id)
+        .then(producto => {
+          res.render ('productCart', {producto})
+        })
       },
 
 

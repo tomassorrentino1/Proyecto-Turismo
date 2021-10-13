@@ -23,7 +23,8 @@
           </div>
           <div>
             <form action="/products/cart" method="GET">
-              <button class="comprar">Comprar</button>
+              <a href="/products/<%= producto.idProduct %>/cart" class="comprar">Comprar</a>
+              <button class="comprar" href="/products/<%= producto.idProduct %>/cart">Comprar</button>
             </form>
 
 
