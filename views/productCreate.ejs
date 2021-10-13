@@ -22,9 +22,7 @@
                     <label for="name" class="label-form">Nombre del producto:</label>
                     <input type="text" class="control" id="name"  name="name" 
                     value='<%= locals.old && old.name ? old.name : ''  %>' placeholder="Ej: Paquete Iguazu">
-                </fieldset>
-
-                
+                </fieldset>             
 
                 <fieldset class="control-formulario">
                     <label for="name" class="label-form">ID del destino:</label>
@@ -35,8 +33,7 @@
                     <label for="name" class="label-form">ID de categoria:</label>
                     <input type="text" class="control" id="category"  name="category_id" placeholder="Ej: Aventura">
                 </fieldset>
-    
-                
+
                 <fieldset class="control-formulario">
                     <label for="precio" class="label-form">Precio:</label>
                     <input type="numero" name="price" id="precio" class="control" placeholder="Ej: $40.000">
@@ -66,9 +63,6 @@
             
         </div>
 
-        
-    
-    
         <%- include('./partials/footer')  %> 
         <script src= '/js/validationCreateProduct.js' charset="utf-8" type="text/javascript"></script>
     </body>	

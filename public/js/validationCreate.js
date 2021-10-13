@@ -9,15 +9,15 @@ window.addEventListener("load", () => {
     let email = document.querySelector("#email");
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let password = document.querySelector("#password");
-    /*let image = document.querySelector("#image");
+    let image = document.querySelector("#image");
     let FileUploadPath = image.value;
-    */
+    
 
     if (name.value == "") {
       alert("El campo nombre no debe estar vacio");
       errores.push(" ");
     } else if (name.value.length < 2) {
-      alert("El campo nombre tener al menos 2 caracteres");
+      alert("El campo nombre debe tener al menos 2 caracteres");
       errores.push(" ");
     }
 
@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
     if (email.value == "") {
       alert("El campo email no debe estar vacio");
       errores.push(" ");
-    } else if (emailAdress.match(regexEmail)) {
+    } else if(emailAdress.match(regexEmail)) {
       alert("Ingresar un email valido");
       errores.push(" ");
     }

@@ -8,6 +8,7 @@ window.addEventListener ('load', ()=> {
         let email = document.querySelector('.email');
         let password = document.querySelector('.password');
         let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        
     
         if (email.value == "") {
             alert ('El campo email debe no debe estar vacio')
@@ -25,7 +26,7 @@ window.addEventListener ('load', ()=> {
     
                 e.preventDefault();
             }
-        
+          
     });
     
     })

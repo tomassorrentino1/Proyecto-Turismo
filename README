@@ -32,5 +32,4 @@ Log in:
 Cuando salta la validacion back, anula el mensaje front
 
 ProductCreate:
-el value para textArea no funciona
 Multer ya valida el formato de la imagen no?

@@ -16,7 +16,7 @@ let productController = {
       },
 
 
-      'list':  async (req, res) => {
+    'list':  async (req, res) => {
         db.Product.findAll()
             .then(producto => {
                 res.render('products', { producto })
